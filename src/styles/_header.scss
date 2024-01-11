@@ -1,0 +1,15 @@
+.header {
+  @include container();
+  @include flex();
+
+  &-left {
+    @include flex();
+    width: 70%;
+  }
+
+  &-right {
+    @include flex();
+    width: 30%;
+  }
+}
+
