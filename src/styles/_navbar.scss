@@ -1,7 +1,27 @@
+.nav {
+  margin-left: 6rem;
+}
+
 .navbar {
   &__lists {
     @include flex();
-    gap: $p-2;
+    width: 50%;
+    gap: 3.3rem;
+  }
 
+  &__link {
+    font-family: $font-f-inter;
+    font-size: $font-18;
+    font-weight: $font-w-500;
+    line-height: 26.74px;
+
+    color: $color-grey-navbar;
+
+    cursor: pointer;
+
+    &:hover {
+      @include transition();
+      color: $primary-color;
+    }
   }
 }

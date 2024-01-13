@@ -1,7 +1,6 @@
 .account {
   &__lists {
-    @include flex();
-    gap: $p-2;
-
+   @include flex();
+    gap: 0.5rem;
   }
 }

@@ -1,0 +1,21 @@
+.btn {
+  width: 121.4px;
+  height: 62.5px;
+  border-radius: 17.8px;
+  background-color: $primary-color;
+
+  padding: $p-1 $p-1-5;
+
+  color: $background-color;
+  font-size: $font-18;
+  font-family: $font-f-inter;
+  font-weight: $font-w-700;
+  line-height: 26.74px;
+
+  cursor: pointer;
+
+  &__login {
+    color: $color-grey-navbar;
+    background-color: $background-color;
+  }
+}

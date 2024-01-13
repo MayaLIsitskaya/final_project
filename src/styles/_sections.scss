@@ -1,0 +1,19 @@
+.section {
+
+  &__block {
+
+    justify-content: space-between;
+  }
+
+  &-2 {
+    background-color: $primary-color;
+  }
+}
+
+.flex {
+  @include flex();
+  justify-content: space-between;
+  gap: 10rem;
+  @include container();
+}
+

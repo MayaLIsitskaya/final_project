@@ -1,0 +1,20 @@
+.footer {
+  background-color: $background-footer-color;
+  height: 20rem;
+  padding-top: $p-6;
+
+  &-top {
+    @include container();
+    @include flex();
+    justify-content: space-between;
+    padding-bottom: $p-1-5;
+  }
+
+  &-down {
+    @include container();
+    @include flex();
+    justify-content: space-between;
+    margin: $m-3 auto;
+    padding-bottom: $p-1-5;
+  }
+}

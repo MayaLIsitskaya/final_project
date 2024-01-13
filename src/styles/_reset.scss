@@ -2,9 +2,6 @@
 *:before,
 *:after {
   box-sizing: border-box;
-
-  margin: 0;
-  padding: 0;
 }
 
 html,
@@ -69,9 +66,23 @@ video {
   text-size-adjust: none;
 }
 
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
 ol,
-ul {
+ul,
+a {
   list-style: none;
+  text-decoration: none;
 }
 
 blockquote,

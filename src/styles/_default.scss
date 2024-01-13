@@ -15,6 +15,24 @@ body {
 }
 
 body {
-  margin: $m-1 auto;
+  margin: 0 auto;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+
+  &-title {
+    font-family: $font-f-poppins;
+    font-size: 21.176px;
+    font-weight: $font-w-600;
+    line-height: 130%;
+    color: $primary-color;
+
+    margin-left: $p-0-5;
+  }
+}
+
+.line {
+  border-bottom: 1px solid $color-blue-grey;
+}

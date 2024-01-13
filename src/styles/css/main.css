@@ -1,17 +1,247 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 10 | @import "./account";
- *    |         ^^^^^^^^^^^
- *    '
- *   main.scss 10:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 10 \2502  @import \"./account\";\a    \2502          ^^^^^^^^^^^\a    \2575 \a   main.scss 10:9  root stylesheet";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6C5FBC;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background: #F9F9F9;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 21.176px;
+  font-weight: 600;
+  line-height: 130%;
+  color: #6C5FBC;
+  margin-left: 0.5rem;
+}
+
+.line {
+  border-bottom: 1px solid #CBD5E1;
+}
+
+.btn {
+  width: 121.4px;
+  height: 62.5px;
+  border-radius: 17.8px;
+  background-color: #6C5FBC;
+  padding: 1rem 1.5rem;
+  color: #F9F9F9;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 26.74px;
+  cursor: pointer;
+}
+.btn__login {
+  color: #606060;
+  background-color: #F9F9F9;
+}
+
+.nav {
+  margin-left: 6rem;
+}
+
+.navbar__lists {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  gap: 3.3rem;
+}
+.navbar__link {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26.74px;
+  color: #606060;
+  cursor: pointer;
+}
+.navbar__link:hover {
+  transition: all 0.3s;
+  color: #6C5FBC;
+}
+
+.account__lists {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem auto;
+  padding-bottom: 1.5rem;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.section__block {
+  justify-content: space-between;
+}
+.section-2 {
+  background-color: #6C5FBC;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #EAEAEA;
+  height: 20rem;
+  padding-top: 6rem;
+}
+.footer-top {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+.footer-down {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem auto;
+  padding-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
