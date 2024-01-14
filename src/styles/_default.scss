@@ -49,3 +49,41 @@ body {
   border-bottom: 1px solid $color-blue-grey;
 }
 
+.card {
+  position: relative;
+  top: -4%;
+  left: 280px;
+  z-index: 10;
+  width: 328.7px;
+  height: 89.4px;
+  border-radius: 16.4px;
+  background-color: $color-white;
+
+  &-img {
+    margin: $p-0-5 $p-1;
+  }
+
+  &-title {
+    position: relative;
+    top: -80px;
+    left: 110px;
+
+    font-family: $font-f-poppins;
+    font-size: $font-16;
+    font-weight: $font-w-600;
+    line-height: 140%;
+    color: $color-black;
+
+    &__description {
+      position: relative;
+      top: -65px;
+      left: 110px;
+
+      font-family: $font-f-poppins;
+      font-size: $font-9;
+      font-weight: $font-w-500;
+      line-height: 140%;
+      color: $color-black;
+    }
+  }
+}

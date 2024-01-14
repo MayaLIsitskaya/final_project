@@ -35,7 +35,6 @@
     }
   }
 
-
   &-1 {
     @include container();
 
@@ -81,80 +80,43 @@
       left: 383px;
     }
 
-    .card {
+
+    &-text {
       position: relative;
-      top: -4%;
-      left: 280px;
-      z-index: 10;
-      width: 328.7px;
-      height: 89.4px;
-      border-radius: 16.4px;
-      background-color: $color-white;
+      top: -65px;
+      left: 270px;
 
-      &-img {
-        margin: $p-0-5 $p-1;
-      }
-
-      &-title {
-        position: relative;
-        top: -80px;
-        left: 110px;
-
-        font-family: $font-f-poppins;
-        font-size: $font-16;
-        font-weight: $font-w-600;
-        line-height: 140%;
-        color: $color-black;
-
-        &__description {
-          position: relative;
-          top: -65px;
-          left: 110px;
-
-          font-family: $font-f-poppins;
-          font-size: $font-9;
-          font-weight: $font-w-500;
-          line-height: 140%;
-          color: $color-black;
-        }
-      }
-
-      &-text {
-        position: relative;
-        top: -65px;
-        left: 270px;
-
-        font-family: $font-f-poppins;
-        font-size: $font-10;
-        font-weight: $font-w-500;
-        line-height: 140%;
-        color: $color-dark-grey;
-      }
-
-      &-illustration {
-        position: relative;
-        top: -190px;
-        left: 340px;
-      }
+      font-family: $font-f-poppins;
+      font-size: $font-10;
+      font-weight: $font-w-500;
+      line-height: 140%;
+      color: $color-dark-grey;
     }
 
-    .chart {
+    &-illustration {
       position: relative;
-      top: -27%;
-      left: -5px;
-      width: 206.9px;
-      height: 205.4px;
-      border-radius: 16.8px;
-      background-color: $color-white;
-      box-shadow: 14.12px 18.827px 37.655px 0px rgba(26, 32, 44, 0.15);
-
-      &-illustration {
-        position: relative;
-        top: -27%;
-        left: -44px;
-      }
+      top: -190px;
+      left: 340px;
     }
   }
+
+  .chart {
+    position: relative;
+    top: -27%;
+    left: -5px;
+    width: 206.9px;
+    height: 205.4px;
+    border-radius: 16.8px;
+    background-color: $color-white;
+    box-shadow: 14.12px 18.827px 37.655px 0px rgba(26, 32, 44, 0.15);
+
+    &-illustration {
+      position: relative;
+      top: -27%;
+      left: -44px;
+    }
+  }
+
 
   &-2 {
     padding: $p-3 $p-20;
@@ -181,7 +143,7 @@
         }
 
         &_description {
-          font-family:$font-f-inter;
+          font-family: $font-f-inter;
           font-size: $font-14;
           font-weight: $font-w-500;
           line-height: 150%;
@@ -212,6 +174,7 @@
         top: 12%;
         left: -15px;
       }
+
       &-arrow-right {
         padding-left: $p-0-5;
         position: relative;
@@ -248,15 +211,35 @@
           top: -2.5rem;
         }
       }
-
     }
 
     .like {
       padding-top: $p-1;
       padding-left: 11rem;
     }
+
+    .price {
+      margin-left: $m-1-5;
+      color: $color-black;
+      font-family: $font-f-manrope;
+      font-size: $font-25;
+      font-weight: $font-w-700;
+      line-height: 155.556%;
+
+      &-grey {
+        color: $color-card-info;
+        font-size: $font-18;
+        line-height: 40.345px;
+      }
+    }
+
+    .dish {
+      margin-left: $m-1;
+    }
   }
-
-
-
 }
+
+
+
+
+

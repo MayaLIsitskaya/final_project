@@ -152,6 +152,40 @@ body {
   border-bottom: 1px solid #CBD5E1;
 }
 
+.card {
+  position: relative;
+  top: -4%;
+  left: 280px;
+  z-index: 10;
+  width: 328.7px;
+  height: 89.4px;
+  border-radius: 16.4px;
+  background-color: #FFFFFF;
+}
+.card-img {
+  margin: 0.5rem 1rem;
+}
+.card-title {
+  position: relative;
+  top: -80px;
+  left: 110px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #323142;
+}
+.card-title__description {
+  position: relative;
+  top: -65px;
+  left: 110px;
+  font-family: "Poppins", sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #323142;
+}
+
 .btn {
   width: 121.4px;
   height: 62.5px;
@@ -190,7 +224,25 @@ body {
 .btn__view {
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
   margin-top: 5rem;
+  color: #ACADB9;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 225.921%;
+  letter-spacing: -0.1px;
+}
+.btn__add {
+  margin-left: 4rem;
+  width: 43.83px;
+  height: 39.721px;
+  border-radius: 8.9px;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  background-color: #323142;
+  cursor: pointer;
 }
 
 .nav {
@@ -396,40 +448,7 @@ body {
   top: -94%;
   left: 383px;
 }
-.section-1 .card {
-  position: relative;
-  top: -4%;
-  left: 280px;
-  z-index: 10;
-  width: 328.7px;
-  height: 89.4px;
-  border-radius: 16.4px;
-  background-color: #FFFFFF;
-}
-.section-1 .card-img {
-  margin: 0.5rem 1rem;
-}
-.section-1 .card-title {
-  position: relative;
-  top: -80px;
-  left: 110px;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 140%;
-  color: #323142;
-}
-.section-1 .card-title__description {
-  position: relative;
-  top: -65px;
-  left: 110px;
-  font-family: "Poppins", sans-serif;
-  font-size: 9px;
-  font-weight: 500;
-  line-height: 140%;
-  color: #323142;
-}
-.section-1 .card-text {
+.section-1-text {
   position: relative;
   top: -65px;
   left: 270px;
@@ -439,12 +458,12 @@ body {
   line-height: 140%;
   color: #ACADB9;
 }
-.section-1 .card-illustration {
+.section-1-illustration {
   position: relative;
   top: -190px;
   left: 340px;
 }
-.section-1 .chart {
+.section .chart {
   position: relative;
   top: -27%;
   left: -5px;
@@ -454,7 +473,7 @@ body {
   background-color: #FFFFFF;
   box-shadow: 14.12px 18.827px 37.655px 0px rgba(26, 32, 44, 0.15);
 }
-.section-1 .chart-illustration {
+.section .chart-illustration {
   position: relative;
   top: -27%;
   left: -44px;
@@ -538,6 +557,22 @@ body {
 .section-4 .like, .section-5 .like {
   padding-top: 1rem;
   padding-left: 11rem;
+}
+.section-4 .price, .section-5 .price {
+  margin-left: 1.5rem;
+  color: #323142;
+  font-family: "Manrope", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 155.556%;
+}
+.section-4 .price-grey, .section-5 .price-grey {
+  color: #8E97A6;
+  font-size: 18px;
+  line-height: 40.345px;
+}
+.section-4 .dish, .section-5 .dish {
+  margin-left: 1rem;
 }
 
 .footer {
