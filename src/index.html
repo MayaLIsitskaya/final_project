@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/css/main.min.css">
 
     <!--swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">-->
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,55 +48,207 @@
                 <a href="#" class="btn btn__login" id="login">Login</a>
             </li>
             <li class="account__list">
-<!--                <a href="./pages/sign_up.html" class="btn btn__push" id="signup">Sign up</a>-->
-                <span  class="btn btn__push" id="signup">Sign up</span>
+                <span  class="btn btn__submit" id="signup">Sign up</span>
             </li>
         </ul>
     </div>
 </header>
 
 <main class="main">
-    <section class="section container section-1">
+    <section class="section section-1">
         <div class="section__block">
             <div class="section__block_description">
-                <span><img src="./img/icons/Line%20203.svg" alt="line"> OVER 1000 USERS</span>
-                <h1>
+                <div class="logo">
+                    <img src="./img/icons/Line%20203.svg" alt="line">
+                    <span class="logo-description">OVER 1000 USERS</span>
+                </div>
+                <h1 class="title">
                     Enjoy Foods All <br/>
-                    Over The <span>World</span>
+                    Over The <span class="title-highlight">World</span>
                 </h1>
-                <p>EatLy help you set saving goals, earn cash back offers, Go to disclaimer for more details and get
-                    paychecks up to two days early. Get a <span>$20 bonus</span>.
+                <p class="title-description">EatLy help you set saving goals, earn cash back offers, Go <br /> to disclaimer
+                    for more details and get paychecks up to two <br /> days early. Get a <span class="title-description__weight">$20 bonus</span>.
                 </p>
 
                 <ul class="account__lists">
                     <li class="account__list">
-                        <a href="#" class="btn btn__login">Get Started</a>
+                        <a href="#" class="btn btn__submit">Get Started</a>
                     </li>
                     <li class="account__list">
-                        <a href="#" class="btn btn__push">Go Pro</a>
+                        <a href="#" class="btn btn__switch">Go Pro</a>
                     </li>
                 </ul>
-            </div>
-            <div>
-                <img src="./img/icons/trustpilot-1%201.svg" alt="trustpilot">
-                <img src="./img/icons/Star.svg" alt="stars">
-                <span>4900+</span>
+
+                <div class="block__row">
+                    <img src="./img/icons/trustpilot-1%201.svg" alt="trustpilot">
+                    <img class="block__row_center" src="./img/icons/Star.svg" alt="stars">
+                    <span class="block__row_center ">4900+</span>
+                </div>
             </div>
 
-            <div class="section__block_description"></div>
+            <div class="section__block_description">
+                <div class="card">
+                    <img src="./img/Food%20Image.png" class="card-img" width="74" height="81">
+                    <h3 class="card-title">Chicken Hell</h3>
+                    <h3 class="card-title__description">On The Way</h3>
+                    <p class="card-text">3:09 PM</p>
+                    <img src="./img/icons/Illustration%2001.svg" class="card-illustration">
+                </div>
+                <div class="around">
+                    <img src="./img/Food%20Image.png" class="around-img">
+                    <img src="./img/icons/Arrow%2001.svg" class="arrow">
+                </div>
+                <div class="chart">
+                    <canvas id="chart"></canvas>
+                </div>
+                <img src="./img/icons/Illustration%2002.svg" class="chart-illustration">
+            </div>
         </div>
     </section>
-    <section class="section container section-2">
+
+    <section class="section section-2">
+     <div class="row__items">
+         <div class="row__items_item">
+             <h3 class="row__items_title">10K+</h3>
+             <p class="row__items_description">
+                 Satisfied Costumers <br />
+                 All Great Over The World </p>
+         </div>
+         <img src="./img/icons/Line%2090.svg" alt="line">
+         <div class="row__items_item">
+             <h3 class="row__items_title">4M</h3>
+             <p class="row__items_description">
+                 Healthy Dishes Sold <br />
+                 Including Milk Shakes Smooth </p>
+         </div>
+         <img src="./img/icons/Line%2090.svg" alt="line">
+         <div class="row__items_item">
+             <h3 class="row__items_title">99.99%</h3>
+             <p class="row__items_description">
+                 Reliable Customer Support <br />
+                 We Provide Great Experiences </p>
+         </div>
+     </div>
+    </section>
+    
+    <section class="section section-3 line">
         <div class="section__block">
-            <ul class="flex">
-                <li>10K+ <br /><span>Satisfied Costumers <br /> All Great Over The World </span></li>
-                <li>4M <br /><span>Healthy Dishes Sold <br /> Including Milk Shakes Smooth</span></li>
-                <li>99.99% <br /><span>Reliable Customer Support <br /> We Provide Great Experiences</span></li>
-            </ul>
+            <div class="section__block_description">
+                <img class="img" src="./img/Mobile.png" alt="mobile">
+            </div>
+
+            <div class="section__block_description">
+                <h1 class="title-2">Premium <span class="title-highlight">Quality</span><br />For Your Health</h1>
+                <ul class="marked__list">
+                    <li class="marked__list_item">
+                        Premium quality food is made with ingredients that <br /> are packed with essential vitamins, minerals.
+                    </li>
+                    <li class="marked__list_item">
+                        Premium quality food is made with ingredients that <br /> are packed with essential vitamins, minerals.
+                    </li>
+                </ul>
+                    <a href="#" class="btn btn__submit">Download
+                        <img class="img-arrow-right" src="./img/icons/arrow-right.svg" alt="right"> </a>
+                <img class="img-vector" src="./img/icons/Vector%2014.svg" alt="vector">
+            </div>
         </div>
     </section>
-    <section class="section container section-3"></section>
-    <section class="section container section-4"></section>
+
+    <section class="section section-4 line">
+        <h2 class="title-3">Our Top <span class="title-highlight">Restaurants</span></h2>
+            <div class="section__cards">
+                <div class="section__cards_item">
+                    <img class="img-card" src="./img/dish-1.jpg" alt="dish">
+                    <div class="container">
+                        <p class="title-type">Healthy</p>
+                        <h3 class="title-card">The Chicken King</h3>
+                    </div>
+                    <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.8</p>
+                    <img class="card-info--icon" src="./img/icons/Bookmark.svg" alt="bookmark">
+                </div>
+                <div class="section__cards_item">
+                    <img class="img-card" src="./img/dish-2.jpg" alt="dish">
+                    <div class="container">
+                        <p class="title-type--red">Trending</p>
+                        <h3 class="title-card">The Burger King</h3>
+                    </div>
+                    <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.9 </p>
+                    <img class="card-info--icon" src="./img/icons/Bookmark.svg" alt="bookmark">
+                </div>
+                <div class="section__cards_item">
+                    <img class="img-card" src="./img/dish-1.jpg" alt="dish">
+                    <div class="container">
+                        <p class="title-type">Healthy</p>
+                        <h3 class="title-card">The Chicken King</h3>
+                    </div>
+                    <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.8 </p>
+                    <img class="card-info--icon" src="./img/icons/Bookmark.svg" alt="bookmark">
+                </div>
+            </div>
+        <a href="#" class="btn__view">
+            <img src="./img/icons/View%20All.svg" alt="view">
+        </a>
+    </section>
+
+    <section class="section section-5 line">
+        <h2 class="title-3">Our Top <span class="title-highlight">Dishes</span></h2>
+        <div class="section__dish">
+            <div class="section__dish_item">
+                <img class="like" src="./img/icons/Heart.svg" alt="heart">
+                <img class="dish" src="./img/salmon.png" alt="food" width="190" height="190">
+                <div class="container">
+                    <p class="title-type">Healthy</p>
+                    <h3 class="title-card">Chicken Hell</h3>
+                </div>
+                <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.8</p>
+                <span>$12<span>.99</span></span> <button class="add">+</button>
+            </div>
+            <div class="section__dish_item">
+                <img class="like" src="./img/icons/Heart.svg" alt="heart">
+                <img class="dish" src="./img/salmon.png" alt="food" width="190" height="190">
+                <div class="container">
+                    <p class="title-type--red">Trending</p>
+                    <h3 class="title-card">Swe Dish</h3>
+                </div>
+                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.9 </p>
+                <span>$12<span>.99</span></span> <button class="add">+</button>
+            </div>
+            <div class="section__dish_item">
+                <img class="like" src="./img/icons/Heart.svg" alt="heart">
+                <img class="dish" src="./img/salmon.png" alt="food" width="190" height="190">
+                <div class="container">
+                    <p class="title-type--green">Supreme</p>
+                    <h3 class="title-card">Swe Dish</h3>
+                </div>
+                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.9 </p>
+                <span>$12<span>.99</span></span> <button class="add">+</button>
+            </div>
+            <div class="section__dish_item">
+                <img class="like" src="./img/icons/Heart.svg" alt="heart">
+                <img class="dish" src="./img/salmon.png" alt="food" width="190" height="190">
+                <div class="container">
+                    <p class="title-type--red">Healthy</p>
+                    <h3 class="title-card">Chicken Hell</h3>
+                </div>
+                <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.8 </p>
+                <span>$12<span>.99</span></span> <button class="add">+</button>
+            </div>
+            <div class="section__dish_item">
+                <img class="like" src="./img/icons/Heart.svg" alt="heart">
+                <img class="dish" src="./img/salmon.png" alt="food" width="190" height="190">
+                <div class="container">
+                    <p class="title-type">Trending</p>
+                    <h3 class="title-card">Swe Dish</h3>
+                </div>
+                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.9 </p>
+                <span>$12<span>.99</span></span><button class="add">+</button>
+            </div>
+        </div>
+        <a href="#" class="btn__view">
+            <img src="./img/icons/View%20All.svg" alt="view">
+        </a>
+    </section>
+
 </main>
 
 <footer class="footer">
@@ -125,10 +277,9 @@
     </div>
 
     <div class="footer-down">
-        <div class="section__block_description">
-            <p class="description">&#169; 2023 EATLY All Rights Reserved.</p>
-        </div>
-        <div class="section__block_description">
+        <p class="description">&#169; 2023 EATLY All Rights Reserved.</p>
+
+        <nav class="nav">
             <ul class="navbar__lists">
                 <li class="navbar__lists">
                     <a href="#" class="navbar__link">
@@ -151,13 +302,48 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </div>
 </footer>
 
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('chart');
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+            }]
+        },
+
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            hoverRadius: 12,
+            interaction: {
+                mode: 'nearest',
+                intersect: false,
+                axis: 'x'
+            },
+        }
+    });
+</script>
+
 <!--scripts-->
 <script src="./js/btn.js"></script>
-<!-- swiper -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!--&lt;!&ndash; swiper &ndash;&gt;-->
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
 </body>
 </html>

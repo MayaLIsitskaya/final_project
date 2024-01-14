@@ -18,4 +18,32 @@
     color: $color-grey-navbar;
     background-color: $background-color;
   }
+
+  &__submit {
+    border-radius: 12.4px;
+
+    font-size: $font-16;
+    font-family: $font-f-poppins;
+    font-weight: $font-w-500;
+    letter-spacing: 0.163px;
+  }
+
+  &__switch {
+    border-radius: 12.4px;
+    border: 1px solid $primary-color;
+    background-color:  $background-color;
+
+    color: $primary-color;
+    font-size: $font-16;
+    font-family: $font-f-poppins;
+    font-weight: $font-w-500;
+    letter-spacing: 0.163px;
+    margin-left: $m-1;
+  }
+
+  &__view {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: $m-5;
+  }
 }

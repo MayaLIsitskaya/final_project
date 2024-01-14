@@ -1,0 +1,107 @@
+.title {
+  margin-top: $m-1;
+  color: $color-main-title;
+
+  font-family: $font-f-poppins;
+  font-size: $font-75;
+  font-weight: $font-w-600;
+  line-height: 120%;
+  letter-spacing: -3px;
+
+  &-highlight {
+    color: $primary-color;
+  }
+
+  &-description {
+    margin-top: $m-1;
+    margin-bottom: $m-3;
+    color: $color-grey-text;
+
+    font-family: $font-f-inter;
+    font-size: $font-18;
+
+    font-weight: $font-w-400;
+    line-height: 155.556%;
+    opacity: 0.7;
+
+    &__weight {
+      color: $primary-color;
+      font-weight: $font-w-500;
+    }
+  }
+
+  &-2 {
+    padding-top: $p-5;
+
+    font-size: $font-50;
+    font-weight: $font-w-700;
+    line-height: 114.286%;
+    margin-bottom: $m-4;
+  }
+
+  &-3 {
+    text-align: center;
+
+    font-size: $font-45;
+    font-weight: $font-w-600;
+    line-height: 56.797%;
+
+    margin-bottom: $m-4;
+  }
+
+  &-type {
+    width: 65.8px;
+    height: 24.8px;
+    border-radius: 5.4px;
+    background-color: #F7EDD0;
+
+    color: $color-orange;
+
+    font-family: $font-f-poppins;
+    font-size: $font-12;
+    font-weight: $font-w-400;
+    text-align: center;
+    padding: $p-0-5;
+
+    &--red {
+      width: 74px;
+      height: 24.2px;
+      border-radius: 5.4px;
+      font-family: $font-f-poppins;
+      font-size: $font-12;
+      font-weight: $font-w-400;
+      text-align: center;
+      padding: 0.4rem;
+
+      background-color: #F7C5BA;
+      color: $color-carrot-red;
+    }
+
+    &--green {
+      width: 64px;
+      height: 21px;
+      border-radius: 5.4px;
+      font-family: $font-f-poppins;
+      font-size: $font-12;
+      font-weight: $font-w-400;
+      text-align: center;
+      padding: 0.3rem;
+
+      background-color: #c1e6d0;
+      color:  $color-green;
+    }
+  }
+
+  &-card {
+    color: $color-black;
+    font-family: $font-f-poppins;
+    font-size: $font-25;
+    font-weight: $font-w-600;
+    line-height: 162.5%;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}

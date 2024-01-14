@@ -1,19 +1,262 @@
 .section {
+  padding: $p-6 0;
+
+  &__cards {
+    @include flex();
+    gap: 2rem;
+
+    &_item {
+      background-color: #FFFFFF;
+      border-radius: 30px;
+      height: 18rem;
+      box-shadow: 5.946px 71.348px 35.674px 0px rgba(229, 229, 229, 0.70);
+    }
+  }
 
   &__block {
+    display: flex;
 
+    &_description {
+      width: 50%;
+    }
+  }
+
+  &__dish {
+    @include container();
+    @include flex();
     justify-content: space-between;
+    gap: 2rem;
+
+    &_item {
+      background-color: $color-white;
+      height: 24rem;
+      width: 14rem;
+      border-radius: 34.6px;
+    }
+  }
+
+
+  &-1 {
+    @include container();
+
+    .block {
+      &__row {
+        display: flex;
+        align-items: center;
+        gap: $p-0-5;
+        margin-top: $m-2;
+
+        &_center {
+          padding-top: 0.5rem;
+
+          font-family: $font-f-inter;
+          font-size: $font-16;
+          font-weight: $font-w-500;
+          line-height: 150%;
+          color: $color-blue-grey;
+        }
+      }
+    }
+
+    .around {
+      position: relative;
+      width: 422px;
+      height: 424px;
+      top: -8%;
+      left: 96px;
+      background-color: $color-around;
+
+      border-radius: 50%;
+
+      &-img {
+        position: relative;
+        top: 8px;
+        left: -24px;
+      }
+    }
+
+    .arrow {
+      position: relative;
+      top: -94%;
+      left: 383px;
+    }
+
+    .card {
+      position: relative;
+      top: -4%;
+      left: 280px;
+      z-index: 10;
+      width: 328.7px;
+      height: 89.4px;
+      border-radius: 16.4px;
+      background-color: $color-white;
+
+      &-img {
+        margin: $p-0-5 $p-1;
+      }
+
+      &-title {
+        position: relative;
+        top: -80px;
+        left: 110px;
+
+        font-family: $font-f-poppins;
+        font-size: $font-16;
+        font-weight: $font-w-600;
+        line-height: 140%;
+        color: $color-black;
+
+        &__description {
+          position: relative;
+          top: -65px;
+          left: 110px;
+
+          font-family: $font-f-poppins;
+          font-size: $font-9;
+          font-weight: $font-w-500;
+          line-height: 140%;
+          color: $color-black;
+        }
+      }
+
+      &-text {
+        position: relative;
+        top: -65px;
+        left: 270px;
+
+        font-family: $font-f-poppins;
+        font-size: $font-10;
+        font-weight: $font-w-500;
+        line-height: 140%;
+        color: $color-dark-grey;
+      }
+
+      &-illustration {
+        position: relative;
+        top: -190px;
+        left: 340px;
+      }
+    }
+
+    .chart {
+      position: relative;
+      top: -27%;
+      left: -5px;
+      width: 206.9px;
+      height: 205.4px;
+      border-radius: 16.8px;
+      background-color: $color-white;
+      box-shadow: 14.12px 18.827px 37.655px 0px rgba(26, 32, 44, 0.15);
+
+      &-illustration {
+        position: relative;
+        top: -27%;
+        left: -44px;
+      }
+    }
   }
 
   &-2 {
-    background-color: $primary-color;
+    padding: $p-3 $p-20;
+    background-image: url("../../img/BG.png");
+    height: 13.7rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: $m-6;
+
+    .row {
+      &__items {
+        @include flex();
+        justify-content: space-between;
+        text-align: center;
+
+        &_title {
+          margin-bottom: $m-0-5;
+
+          font-family: $font-f-public;
+          font-size: $font-43;
+          font-weight: $font-w-700;
+          line-height: 125%;
+          color: $color-white;
+        }
+
+        &_description {
+          font-family:$font-f-inter;
+          font-size: $font-14;
+          font-weight: $font-w-500;
+          line-height: 150%;
+          color: $color-lavander;
+        }
+      }
+    }
   }
-}
 
-.flex {
-  @include flex();
-  justify-content: space-between;
-  gap: 10rem;
-  @include container();
-}
+  &-3 {
+    @include container();
+    margin-bottom: $m-6;
 
+    .marked {
+      &__list {
+        list-style: disc;
+        color: $color-grey-text;
+        font-family: $font-f-poppins;
+        font-size: $font-20;
+        font-weight: $font-w-400;
+        line-height: 150%;
+      }
+    }
+
+    .img {
+      &-vector {
+        position: relative;
+        top: 12%;
+        left: -15px;
+      }
+      &-arrow-right {
+        padding-left: $p-0-5;
+        position: relative;
+        top: 2%;
+      }
+    }
+  }
+
+  &-4,
+  &-5 {
+    @include container();
+
+    .container {
+      margin: $m-0-5 $m-1-5;
+    }
+
+    .card {
+      &-info {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-family: $font-f-manrope;
+        font-size: $font-18;
+        font-weight: $font-w-400;
+        line-height: 133.333%;
+
+        color: $color-card-info;
+        margin-left: $m-1-5;
+        margin-top: -0.5rem;
+
+        &--icon {
+          position: relative;
+          left: 21rem;
+          top: -2.5rem;
+        }
+      }
+
+    }
+
+    .like {
+      padding-top: $p-1;
+      padding-left: 11rem;
+    }
+  }
+
+
+
+}
