@@ -1,0 +1,124 @@
+.section-1 {
+  .dashboard {
+    &-1 {
+      position: relative;
+      top: -4%;
+      left: 280px;
+      z-index: 10;
+      width: 328.7px;
+      height: 89.4px;
+      border-radius: 16.4px;
+      background-color: $color-white;
+    }
+
+    &-img {
+      margin: $p-0-5 $p-1;
+    }
+
+    &-title {
+      position: relative;
+      top: -80px;
+      left: 110px;
+
+      font-family: $font-f-poppins;
+      font-size: $font-16;
+      font-weight: $font-w-600;
+      line-height: 140%;
+      color: $color-black;
+
+      &__description {
+        position: relative;
+        top: -65px;
+        left: 110px;
+
+        font-family: $font-f-poppins;
+        font-size: $font-9;
+        font-weight: $font-w-500;
+        line-height: 140%;
+        color: $color-black;
+      }
+    }
+
+    &-text {
+      position: relative;
+      top: -65px;
+      left: 270px;
+
+      font-family: $font-f-poppins;
+      font-size: $font-10;
+      font-weight: $font-w-500;
+      line-height: 140%;
+      color: $color-dark-grey;
+    }
+
+    &-illustration {
+      position: relative;
+      top: -190px;
+      left: 340px;
+    }
+  }
+}
+
+.section-6 {
+  .dashboard {
+    &-2,
+    &-3,
+    &-4 {
+      position: relative;
+      z-index: 10;
+      width: 328.7px;
+      height: 89.4px;
+      border-radius: 16.4px;
+      background-color: $color-white;
+      margin-bottom: $m-1;
+    }
+
+    &-img {
+      margin: $p-0-5 $p-1;
+    }
+
+    &-title {
+      position: relative;
+      top: -85px;
+      left: 110px;
+
+      font-family: $font-f-poppins;
+      font-size: $font-16;
+      font-weight: $font-w-600;
+      line-height: 140%;
+      color: $color-black;
+
+      &__description {
+        position: relative;
+        top: -55px;
+        left: 110px;
+
+        font-family: $font-f-poppins;
+        font-size: $font-9;
+        font-weight: $font-w-500;
+        line-height: 140%;
+        color: $color-black;
+      }
+    }
+
+    &-text {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: $p-1;
+      position: relative;
+      top: -67px;
+
+      font-family: $font-f-poppins;
+      font-size: $font-10;
+      font-weight: $font-w-500;
+      line-height: 140%;
+      color: $color-dark-grey;
+    }
+
+    &-cancelled {
+      color: $color-red;
+    }
+  }
+}
+
+

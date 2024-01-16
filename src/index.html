@@ -8,8 +8,7 @@
     <!--custom styles-->
     <link rel="stylesheet" href="./styles/css/main.min.css">
 
-    <!--swiper -->
-<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +47,7 @@
                 <a href="#" class="btn btn__login" id="login">Login</a>
             </li>
             <li class="account__list">
-                <span  class="btn btn__submit" id="signup">Sign up</span>
+                <a href="./pages/sign_up.html" class="btn btn__submit" id="signup">Sign up</a>
             </li>
         </ul>
     </div>
@@ -87,12 +86,12 @@
             </div>
 
             <div class="section__block_description">
-                <div class="card">
-                    <img src="./img/Food%20Image.png" class="card-img" width="74" height="81">
-                    <h3 class="card-title">Chicken Hell</h3>
-                    <h3 class="card-title__description">On The Way</h3>
-                    <p class="card-text">3:09 PM</p>
-                    <img src="./img/icons/Illustration%2001.svg" class="card-illustration">
+                <div class="dashboard-1">
+                    <img src="./img/Food%20Image.png" class="dashboard-img" width="74" height="81">
+                    <h3 class="dashboard-title">Chicken Hell</h3>
+                    <h3 class="dashboard-title__description">On The Way</h3>
+                    <p class="dashboard-text">3:09 PM</p>
+                    <img src="./img/icons/Illustration%2001.svg" class="dashboard-illustration">
                 </div>
                 <div class="around">
                     <img src="./img/Food%20Image.png" class="around-img">
@@ -181,12 +180,12 @@
                         <p class="title-type">Healthy</p>
                         <h3 class="title-card">The Chicken King</h3>
                     </div>
-                    <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.8</p>
+                    <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star">4.8</p>
                     <img class="card-info--icon" src="./img/icons/Bookmark.svg" alt="bookmark">
                 </div>
             </div>
         <a href="#" class="btn__view">View all
-            <img src="./img/icons/arrow-right.svg" alt="">
+            <img src="./img/icons/arrow-right-grey.svg" alt="arrow">
         </a>
     </section>
 
@@ -200,8 +199,9 @@
                     <p class="title-type">Healthy</p>
                     <h3 class="title-card">Chicken Hell</h3>
                 </div>
-                <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.8</p>
-                <span class="price">$12<span class="price-grey">.99</span></span> <button class="btn__add">+</button>
+                <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star">4.8</p>
+                <span class="price">$12<span class="price-grey">.99</span></span>
+                <a class="btn__add">+</a>
             </div>
             <div class="section__dish_item">
                 <img class="like" src="./img/icons/Heart.svg" alt="heart">
@@ -210,8 +210,9 @@
                     <p class="title-type--red">Trending</p>
                     <h3 class="title-card">Swe Dish</h3>
                 </div>
-                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.9 </p>
-                <span class="price">$12<span class="price-grey">.99</span></span> <button class="btn__add">+</button>
+                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star">4.9</p>
+                <span class="price">$12<span class="price-grey">.99</span></span>
+                <a class="btn__add">+</a>
             </div>
             <div class="section__dish_item">
                 <img class="like" src="./img/icons/Heart.svg" alt="heart">
@@ -220,8 +221,9 @@
                     <p class="title-type--green">Supreme</p>
                     <h3 class="title-card">Swe Dish</h3>
                 </div>
-                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.9 </p>
-                <span class="price">$12<span class="price-grey">.99</span></span> <button class="btn__add">+</button>
+                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star">4.9</p>
+                <span class="price">$12<span class="price-grey">.99</span></span>
+                <a class="btn__add">+</a>
             </div>
             <div class="section__dish_item">
                 <img class="like" src="./img/icons/Heart.svg" alt="heart">
@@ -230,8 +232,9 @@
                     <p class="title-type--red">Healthy</p>
                     <h3 class="title-card">Chicken Hell</h3>
                 </div>
-                <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.8 </p>
-                <span class="price">$12<span class="price-grey">.99</span></span> <button class="btn__add">+</button>
+                <p class="card-info">24min &#8226; <img src="./img/icons/small%20star.svg" alt="star">4.8</p>
+                <span class="price">$12<span class="price-grey">.99</span></span>
+                <a class="btn__add">+</a>
             </div>
             <div class="section__dish_item">
                 <img class="like" src="./img/icons/Heart.svg" alt="heart">
@@ -240,39 +243,190 @@
                     <p class="title-type">Trending</p>
                     <h3 class="title-card">Swe Dish</h3>
                 </div>
-                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star"> 4.9 </p>
-                <span class="price">$12<span class="price-grey">.99</span></span><button class="btn__add">+</button>
+                <p class="card-info">34min &#8226; <img src="./img/icons/small%20star.svg" alt="star">4.9</p>
+                <span class="price">$12<span class="price-grey">.99</span></span>
+                <a class="btn__add">+</a>
             </div>
         </div>
-        <a href="#" class="btn__view">
-            <img src="./img/icons/View%20All.svg" alt="view">
+        <a href="#" class="btn__view">View all
+            <img src="./img/icons/arrow-right-grey.svg" alt="arrow">
         </a>
     </section>
 
-    <section class="section section-6">
+    <section class="section section-6 line">
         <div class="section__block">
             <div class="section__block_description">
-                <h1 class="title-2">Premium <span class="title-highlight">Quality</span><br />For Your Health</h1>
-                <div class="card">
-                    <img src="./img/Food%20Image.png" class="card-img" width="74" height="81">
-                    <h3 class="card-title">Chicken Hell</h3>
-                    <h3 class="card-title__description">On The Way</h3>
-                    <p class="card-text">3:09 PM</p>
+                <h1 class="title-2">Control <span class="title-highlight">Purchase</span><br />Via Dashboard</h1>
+                <div class="dashboard-2">
+                    <img src="./img/Food%20Image.png" class="dashboard-img" width="74" height="81">
+                    <h3 class="dashboard-title">Chicken Hell</h3>
+                    <h3 class="dashboard-title__description">On The Way</h3>
+                    <p class="dashboard-text">3:09 PM</p>
                 </div>
-                <div class="card">
-                    <img src="./img/Food%20Image.png" class="card-img" width="74" height="81">
-                    <h3 class="card-title">Chicken Hell</h3>
-                    <h3 class="card-title__description">On The Way</h3>
-                    <p class="card-text">3:09 PM</p>
+                <div class="dashboard-3">
+                    <img src="./img/Food%20Image.png" class="dashboard-img" width="74" height="81">
+                    <h3 class="dashboard-title">Chicken Hell</h3>
+                    <h3 class="dashboard-title__description">Delivered</h3>
+                    <p class="dashboard-text">Yesterday</p>
                 </div>
-                <div class="card">
-                    <img src="./img/Food%20Image.png" class="card-img" width="74" height="81">
-                    <h3 class="card-title">Chicken Hell</h3>
-                    <h3 class="card-title__description">On The Way</h3>
-                    <p class="card-text">3:09 PM</p>
+                <div class="dashboard-4">
+                    <img src="./img/Food%20Image.png" class="dashboard-img" width="74" height="81">
+                    <h3 class="dashboard-title">Chicken Hell</h3>
+                    <h3 class="dashboard-title__description dashboard-cancelled">Cancelled</h3>
+                    <p class="dashboard-text">Yesterday</p>
                 </div>
             </div>
-            <div class="section__block_description"></div>
+
+            <div class="section__block_description">
+                <div class="subsection__block">
+                    <div class="subsection__block_row">
+                            <h2 class="title-subsection">Purchases</h2>
+                            <a class="btn__down">This month <img src="./img/icons/chevron-down.svg" alt="down"></a>
+                        </div>
+                    <div class="subsection__card">
+                            <ul class="subsection__lists">
+                                <li class="subsection__list">
+                                    <img class="icon" src="./img/icons/wallet.svg" alt="wallet">
+                                </li>
+                                <li class="subsection__list">
+                                    <h2 class="title-subsection">Expense</h2>
+                                    <span class="subsection-info">Increased By 10%</span>
+                                </li>
+                                <li class="subsection__list">
+                                    <span class="subsection__lists_price">$409.00</span>
+                                </li>
+                            </ul>
+                            <img class="subsection__lists_scale" src="./img/icons/divider.svg" alt="divider">
+                        </div>
+                    <div class="subsection__card">
+                            <ul class="subsection__lists">
+                                <li class="subsection__list">
+                                    <img class="icon" src="./img/icons/money.svg" alt="money">
+                                </li>
+                                <li class="subsection__list">
+                                    <h2 class="title-subsection">Vocher Usage</h2>
+                                    <span class="subsection-info">Increased By 5%</span>
+                                </li>
+                                <li class="subsection__list">
+                                    <span class="subsection__lists_price">$45.78</span>
+                                </li>
+                            </ul>
+                            <img class="subsection__lists_scale" src="./img/icons/divider-2.svg" alt="divider">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-7">
+        <h2 class="title-3"><span class="title-highlight">Customer</span> Say</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="subsection__card">
+                            <ul class="subsection__lists">
+                                <li class="subsection__list">
+                                    <img class="subsection-image" src="./img/134%20(image).jpg" alt="image">
+                                </li>
+                                <li class="subsection__list">
+                                    <h2 class="title-subsection">Alexander R.</h2>
+                                    <span class="subsection-info">01 Year With Us </span>
+                                </li>
+                                <li class="subsection__list">
+                                    <img class="subsection-quote" src="./img/icons/Path%20173.svg" alt="quote">
+                                </li>
+                            </ul>
+                            <blockquote class="subsection-description">
+                                “Online invoice payment helps companies save time, are faster and save maximum
+                                effort for the clients and save maximum effort. Online invoice payment helps companies
+                                save
+                                time ”
+                            </blockquote>
+                            <img class="subsection-scale" src="./img/icons/Star.svg" alt="star">
+                        </div>
+                        <div class="subsection__card">
+                            <blockquote class="subsection-description">
+                                “Online invoice payment helps companies save time, are faster and save maximum
+                                effort for the clients and save maximum effort. Online invoice payment helps companies
+                                save
+                                time ”
+                            </blockquote>
+                            <img class="subsection-scale" src="./img/icons/Star.svg" alt="star">
+                        </div>
+                        <div class="subsection__card">
+                            <blockquote class="subsection-description">
+                                “Online invoice payment helps companies save time, are faster and save maximum
+                                effort for the clients and save maximum effort. Online invoice payment helps companies
+                                save
+                                time ”
+                            </blockquote>
+                            <img class="subsection-scale" src="./img/icons/Star.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="review">
+                        <div class="subsection__card">
+                            <ul class="subsection__lists">
+                                <li class="subsection__list">
+                                    <img class="subsection-image" src="./img/134%20(image).jpg" alt="image">
+                                </li>
+                                <li class="subsection__list">
+                                    <h2 class="title-subsection">Alexander R.</h2>
+                                    <span class="subsection-info">01 Year With Us </span>
+                                </li>
+                                <li class="subsection__list">
+                                    <img class="subsection-quote" src="./img/icons/Path%20173.svg" alt="quote">
+                                </li>
+                            </ul>
+                            <blockquote class="subsection-description">
+                                “Online invoice payment helps companies save time, are faster and save maximum
+                                effort for the clients and save maximum effort. Online invoice payment helps
+                                companies
+                                save
+                                time ”
+                            </blockquote>
+                            <img class="subsection-scale" src="./img/icons/Star.svg" alt="star">
+                        </div>
+                        <div class="subsection__card">
+                            <blockquote class="subsection-description">
+                                “Online invoice payment helps companies save time, are faster and save maximum
+                                effort for the clients and save maximum effort. Online invoice payment helps
+                                companies
+                                save
+                                time ”
+                            </blockquote>
+                            <img class="subsection-scale" src="./img/icons/Star.svg" alt="star">
+                        </div>
+                        <div class="subsection__card">
+                            <blockquote class="subsection-description">
+                                “Online invoice payment helps companies save time, are faster and save maximum
+                                effort for the clients and save maximum effort. Online invoice payment helps
+                                companies
+                                save
+                                time ”
+                            </blockquote>
+                            <img class="subsection-scale" src="./img/icons/Star.svg" alt="star">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 30px"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <section class="section section-8">
+        <div class="section__discount">
+            <h2 class="title-discount">GET 50%</h2>
+            <div class="input">
+                <div class="input__group">
+                    <input class="input-text" type="text" placeholder="Enter your email">
+                    <a href="#" class="btn btn__subscribe">SUBSCRIBE</a>
+                </div>
+            </div>
+            <img class="input-img" src="./img/chicken02.png" alt="" width="274" height="274">
         </div>
     </section>
 
@@ -369,8 +523,10 @@
 </script>
 
 <!--scripts-->
+
 <script src="./js/btn.js"></script>
-<!--&lt;!&ndash; swiper &ndash;&gt;-->
-<!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="./js/swiper.js"></script>
 </body>
 </html>

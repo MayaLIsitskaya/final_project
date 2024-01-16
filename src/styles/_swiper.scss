@@ -1,0 +1,13 @@
+.swiper {
+  //width: 100%;
+  height: auto;
+
+  &-scrollbar {
+    margin-top: 30px;
+    bottom: 0;
+
+    &-drag {
+      background: $primary-color;
+    }
+  }
+}

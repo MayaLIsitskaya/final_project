@@ -1,6 +1,10 @@
 .footer {
+  position: absolute;
+  bottom: 0;
+
   background-color: $background-footer-color;
   height: 20rem;
+  width: 100%;
   padding-top: $p-6;
 
   &-top {

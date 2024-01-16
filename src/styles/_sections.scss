@@ -1,6 +1,13 @@
 .section {
   padding: $p-6 0;
 
+  &__bgr {
+    width: 1240px;
+    height: 334px;
+    border: #6C5FBC;
+    background-color: $primary-color;
+  }
+
   &__cards {
     @include flex();
     gap: 2rem;
@@ -19,6 +26,25 @@
     &_description {
       width: 50%;
     }
+
+    &_banner {
+      height: 15rem;
+      width: 47rem;
+      border-radius: 18.7px;
+      background-image: url("../../img/icons/banner.svg");
+    }
+
+    &_sorting {
+      padding: $p-2;
+      position: relative;
+      left: 15.5rem;
+
+      background-color: $color-white;
+      width: 377px;
+      height: 591px;
+      border-radius: 23.801px;
+      box-shadow: 5.712px 9.52px 28.561px 0.952px rgba(108, 95, 188, 0.12);
+    }
   }
 
   &__dish {
@@ -28,6 +54,7 @@
     gap: 2rem;
 
     &_item {
+      box-shadow: 6.848px 82.181px 41.091px 0px rgba(229, 229, 229, 0.70);
       background-color: $color-white;
       height: 24rem;
       width: 14rem;
@@ -42,7 +69,7 @@
       &__row {
         display: flex;
         align-items: center;
-        gap: $p-0-5;
+        gap: 1rem;
         margin-top: $m-2;
 
         &_center {
@@ -78,25 +105,6 @@
       position: relative;
       top: -94%;
       left: 383px;
-    }
-
-
-    &-text {
-      position: relative;
-      top: -65px;
-      left: 270px;
-
-      font-family: $font-f-poppins;
-      font-size: $font-10;
-      font-weight: $font-w-500;
-      line-height: 140%;
-      color: $color-dark-grey;
-    }
-
-    &-illustration {
-      position: relative;
-      top: -190px;
-      left: 340px;
     }
   }
 
@@ -165,7 +173,12 @@
         font-size: $font-20;
         font-weight: $font-w-400;
         line-height: 150%;
+
+        &_item {
+          padding-bottom: 1rem;
+        }
       }
+
     }
 
     .img {
@@ -178,7 +191,7 @@
       &-arrow-right {
         padding-left: $p-0-5;
         position: relative;
-        top: 2%;
+        top: 1.5%;
       }
     }
   }
@@ -192,6 +205,7 @@
     }
 
     .card {
+
       &-info {
         display: flex;
         align-items: center;
@@ -237,8 +251,85 @@
       margin-left: $m-1;
     }
   }
-}
 
+  &-6 {
+    @include container();
+
+    .card-info {
+      font-family: $font-f-manrope;
+      font-size: $font-14;
+      font-weight: $font-w-500;
+      line-height: 150%;
+
+      color: $color-card-info;
+    }
+  }
+
+  &-7 {
+    @include container();
+  }
+
+  .review {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  &-8 {
+    @include container();
+  }
+
+  &__discount {
+    width: 1214px;
+    height: 260px;
+    border-radius: 30px;
+    background-color: $primary-color;
+
+    &_icon {
+      position: relative;
+      left: 22.2rem;
+      top: -16.4rem;
+
+      &-1 {
+        position: relative;
+      }
+    }
+  }
+
+  .input {
+    padding-top: $p-4;
+    padding-left: $p-4;
+
+    &__group {
+      padding-top: 1.2rem;
+      padding-left: $p-1;
+
+      width: 439.7px;
+      height: 68px;
+      border-radius: 14.2px;
+      background-color: $color-white;
+      box-shadow: 0px 7.253px 45.333px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    &-text {
+      color: #878787;
+
+      font-family: $font-f-poppins;
+      font-size: $font-16;
+      font-weight: $font-w-400;
+      letter-spacing: 0.488px;
+
+      border: none;
+      outline: none;
+    }
+
+    &-img {
+      position: relative;
+      top: -10rem;
+      left: 55rem;
+    }
+  }
+}
 
 
 

@@ -31,8 +31,6 @@
   }
 
   &-2 {
-    padding-top: $p-5;
-
     font-size: $font-50;
     font-weight: $font-w-700;
     line-height: 114.286%;
@@ -40,6 +38,7 @@
   }
 
   &-3 {
+    color: $color-black;
     text-align: center;
 
     font-size: $font-45;
@@ -61,7 +60,7 @@
     font-size: $font-12;
     font-weight: $font-w-400;
     text-align: center;
-    padding: $p-0-5;
+    padding: 0.4rem;
 
     &--red {
       width: 74px;
@@ -78,14 +77,14 @@
     }
 
     &--green {
-      width: 64px;
-      height: 21px;
+      width: 74px;
+      height: 24.2px;
       border-radius: 5.4px;
       font-family: $font-f-poppins;
       font-size: $font-12;
       font-weight: $font-w-400;
       text-align: center;
-      padding: 0.3rem;
+      padding: 0.4rem;
 
       background-color: #c1e6d0;
       color:  $color-green;
@@ -94,6 +93,7 @@
 
   &-card {
     color: $color-black;
+
     font-family: $font-f-poppins;
     font-size: $font-25;
     font-weight: $font-w-600;
@@ -103,5 +103,44 @@
   &-info {
     display: flex;
     justify-content: space-between;
+  }
+
+  &-discount {
+    padding-top: $p-2;
+    padding-left: $p-4;
+
+    color: $color-white;
+    font-family: $font-f-poppins;
+    font-size: $font-50;
+    font-weight: $font-w-800;
+  }
+}
+
+.section-6,
+.section-7,
+.section-2,
+.section-1 {
+  .title {
+    &-subsection {
+      color: $color-price;
+
+      font-family: $font-f-manrope;
+      font-size: $font-20;
+      font-weight: $font-w-800;
+      line-height: 135%;
+      letter-spacing: 0.314px;
+    }
+  }
+
+  .subsection {
+    &-info {
+      color: $color-grey-scale;
+
+      font-family: $font-f-manrope;
+      font-size: $font-14;
+      font-weight: $font-w-500;
+      line-height: 150%;
+      letter-spacing: 0.628px;
+    }
   }
 }

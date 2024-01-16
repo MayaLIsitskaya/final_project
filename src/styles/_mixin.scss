@@ -11,3 +11,7 @@
   max-width: 1240px;
   margin: 0 auto;
 }
+
+@mixin opacity {
+  opacity: 0.3;
+}

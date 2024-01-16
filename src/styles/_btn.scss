@@ -6,6 +6,7 @@
 
   padding: $p-1 $p-1-5;
 
+  text-align: center;
   color: $background-color;
   font-size: $font-18;
   font-family: $font-f-inter;
@@ -17,6 +18,10 @@
   &__login {
     color: $color-grey-navbar;
     background-color: $background-color;
+
+    &:hover {
+      @include opacity();
+    }
   }
 
   &__submit {
@@ -26,9 +31,14 @@
     font-family: $font-f-poppins;
     font-weight: $font-w-500;
     letter-spacing: 0.163px;
+
+    &:hover {
+      @include opacity();
+    }
   }
 
   &__switch {
+    padding-top: $p-1-3;
     border-radius: 12.4px;
     border: 1px solid $primary-color;
     background-color:  $background-color;
@@ -39,6 +49,40 @@
     font-weight: $font-w-500;
     letter-spacing: 0.163px;
     margin-left: $m-1;
+
+    &-off {
+      margin-left: 0;
+      display: block;
+      width: 377px;
+      height: 75px;
+      font-size: $font-20;
+
+      border-radius: 15.138px 0px 0px 15.138px;
+      border: 2.171px solid $primary-color;
+      background: #F3F5F6;
+
+      box-shadow: 0px 21.785px 48.411px 0px rgba(211, 209, 216, 0.25);
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    &-on {
+      padding-top: $p-1-3;
+      width: 377px;
+      height: 75px;
+      display: block;
+      font-size: $font-20;
+
+      border-radius: 0px 15.138px 15.138px 0px;
+      background: $primary-color;
+      box-shadow: 0px 21.785px 48.411px 0px rgba(211, 209, 216, 0.25);
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 
   &__view {
@@ -54,18 +98,81 @@
     line-height: 225.921%;
     letter-spacing: -0.1px;
 
+    &:hover {
+      @include opacity();
+    }
   }
 
   &__add {
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.5rem;
     margin-left: 4rem;
-    width: 43.83px;
-    height: 39.721px;
+    width: 40px;
+    height: 43px;
     border-radius: 8.9px;
-    border: none;
     font-size: $font-28;
-    color: #FFFFFF;
+    color: $color-white;
     background-color: $color-black;
 
     cursor: pointer;
+
+    &:hover {
+      @include opacity();
+    }
+  }
+
+  &__down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: -0.7rem;
+    width: 10rem;
+    height: 3.3rem;
+    border-radius: 12.6px;
+    border: none;
+    background-color: $color-bgr-button;
+
+    color: $color-price;
+    font-family: $font-f-manrope;
+    font-size: $font-18;
+    font-weight: $font-w-600;
+    line-height: 150%;
+    letter-spacing: 0.628px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-blue-grey;
+      @include opacity();
+    }
+  }
+
+  &__subscribe {
+    color: #F7F8FA;
+    background-color: $primary-color;
+    font-size: $font-14;
+    font-family: $font-f-poppins;
+    font-weight: $font-w-500;
+
+    letter-spacing: 0.443px;
+    margin-left: $m-6;
+  }
+
+  &__apply {
+    display: inline-block;
+    width: 19rem;
+    height: 3.75rem;
+    border-radius: 13.6px;
+
+    background-color: $primary-color;
+    margin-top: $m-1-5;
+
+    color: $background-color;
+    font-size: $font-13;
+    font-family: $font-f-poppins;
+    font-weight: $font-w-600;
+    letter-spacing: -0.137px;
   }
 }

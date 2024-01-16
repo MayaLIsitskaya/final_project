@@ -2,9 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+
+    <!--custom styles-->
+    <link rel="stylesheet" href="../styles/css/main.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<header class="header line">
+    <div class="header-left">
+        <div class="logo">
+            <img src="../img/icons/Logo.svg" alt="logo">
+            <a href="../index.html" class="logo-title">eatly</a>
+        </div>
+
+        <nav class="nav">
+            <ul class="navbar__lists">
+                <li class="navbar__list">
+                    <a href="menu.html" class="navbar__link">Menu</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="blog.html" class="navbar__link">Blog</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="pricing.html" class="navbar__link">Pricing</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="contact.html" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="account">
+        <ul class="account__lists">
+            <li class="account__list">
+                <a href="#" class="btn btn__login" id="login">Login</a>
+            </li>
+            <li class="account__list">
+                <a href="sign_up.html" class="btn btn__submit" id="signup">Sign up</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<main class="main">
+    <section class="section section-8">
+        <div class="section__discount">
+            <!--<img class="section__discount_icon-2" src="./img/icons/Group%2034845.svg" alt="icon">
+            <img class="section__discount_icon" src="./img/icons/Group%2034844.svg" alt="icon">-->
+            <h2 class="title-discount">GET 50%</h2>
+            <div class="input">
+                <div class="input__group">
+                    <input class="input-text" type="text" placeholder="Enter your email">
+                    <a href="#" class="btn btn__subscribe">SUBSCRIBE</a>
+                </div>
+            </div>
+            <img class="input-img" src="../img/chicken02.png" alt="" width="274" height="274">
+        </div>
+    </section>
+
+    <section class="section section-1">
+        <h2 class="title-3">Latest <span class="title-highlight">Articles</span></h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-top line">
+        <div class="logo">
+            <img src="../img/icons/Logo.svg" alt="logo">
+            <a href="../index.html" class="logo-title">eatly</a>
+        </div>
+
+        <nav class="nav">
+            <ul class="navbar__lists">
+                <li class="navbar__list">
+                    <a href="menu.html" class="navbar__link">Menu</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="blog.html" class="navbar__link">Blog</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="pricing.html" class="navbar__link">Pricing</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="contact.html" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer-down">
+        <p class="description">&#169; 2023 EATLY All Rights Reserved.</p>
+
+        <nav class="nav">
+            <ul class="navbar__lists">
+                <li class="navbar__lists">
+                    <a href="#" class="navbar__link">
+                        <img src="../img/icons/instagram-11.svg" alt="social">
+                    </a>
+                </li>
+                <li class="navbar__lists">
+                    <a href="#" class="navbar__link">
+                        <img src="../img/icons/linkedin.svg" alt="social">
+                    </a>
+                </li>
+                <li class="navbar__lists">
+                    <a href="#" class="navbar__link">
+                        <img src="../img/icons/facebook.svg" alt="social">
+                    </a>
+                </li>
+                <li class="navbar__lists">
+                    <a href="#" class="navbar__link">
+                        <img src="../img/icons/twitter.svg" alt="social">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+
+
+
+
+
+<!--scripts-->
+<script src="../js/btn.js"></script>
+<script type="module" src="../js/swiper.js"></script>
+
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
