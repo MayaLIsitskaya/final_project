@@ -160,6 +160,30 @@
     margin-left: $m-6;
   }
 
+  &-minus {
+    width: 33px;
+    height: 31px;
+    border-radius: 9.91px;
+    background: $color-white;
+    border: 1px solid $color-black;
+    color: $color-black;
+
+    font-size: $font-18;
+    cursor: pointer;
+  }
+
+  &-plus {
+    width: 33px;
+    height: 31px;
+    border-radius: 9.91px;
+    background: $color-black;
+    color: $color-white;
+    font-size: $font-18;
+    border: none;
+
+    cursor: pointer;
+  }
+
   &__apply {
     display: inline-block;
     width: 19rem;
@@ -175,4 +199,21 @@
     font-weight: $font-w-600;
     letter-spacing: -0.137px;
   }
+
+  &__review {
+    padding-top: 1.4rem;
+    width: 681px;
+    height: 77px;
+
+    border-radius: 15px;
+    color: #FFF3EB;
+    background-color: $primary-color;
+    font-size: $font-20;
+    font-weight: $font-w-600;
+    letter-spacing: -0.2px;
+
+    &:hover {
+      @include opacity();
+    }
+}
 }

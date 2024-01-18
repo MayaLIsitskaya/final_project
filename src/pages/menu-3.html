@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu | Order</title>
+
+    <!--custom styles-->
+    <link rel="stylesheet" href="../styles/css/main.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header line">
+    <div class="header-left">
+        <div class="logo">
+            <img src="../img/icons/Logo.svg" alt="logo">
+            <a href="../index.html" class="logo-title">eatly</a>
+        </div>
+
+        <nav class="nav">
+            <ul class="navbar__lists">
+                <li class="navbar__list">
+                    <a href="../pages/menu.html" class="navbar__link">Menu</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/blog.html" class="navbar__link">Blog</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/pricing.html" class="navbar__link">Pricing</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/contact.html" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="account">
+        <ul class="account__lists">
+            <li class="account__list">
+                <a href="#" class="btn btn__login" id="login">Login</a>
+            </li>
+            <li class="account__list">
+                <a href="../pages/sign_up.html" class="btn btn__submit" id="signup">Sign up</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<main class="main">
+    <section class="section section-map">
+        <div class="background">
+            <div class="card-location">
+                <div class="wrapper">
+                    <ul class="subsection__lists">
+                        <li class="subsection__list">
+                            <img class="subsection-image" src="../img/Food%20Image.png" alt="dish" width="45" height="45">
+                        </li>
+                        <li class="subsection__list">
+                            <h3 class="title-subsection">Chicken Hell</h3>
+                            <span class="subsection-info">15 minutes</span>
+                        </li>
+                    </ul>
+                </div>
+                <img class="card-line" src="../img/icons/Point.svg" alt="point" width="254" height="255">
+                <img class="card-circle" src="../img/icons/On%20Way.svg" alt="circle" width="15" height="15">
+                <img class="card-pointer" src="../img/icons/pointer%20marker.svg" alt="pointer" width="35" height="43">
+                <div class="card-address">
+                    <h3>Horizenal Road Street 1178<br>California, USA</h3>
+                </div>
+            </div>
+
+            <div class="card-details">
+                <div class="wrapper">
+                    <ul class="subsection__lists">
+                        <li class="subsection__list">
+                            <img src="../img/photo%20rider.png" alt="photo">
+                        </li>
+                        <li class="subsection__list">
+                            <h2 class="title">David Smith</h2>
+                            <span class="info">Food Rider</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="detail-info">
+                    <ul class="detail__lists">
+                        <li class="detail__list">
+                            <img src="../img/icons/Locatin.svg" alt="location" width="41" height="41">
+                        </li>
+                        <li class="detail__list">
+                            <h2 class="subsection-info">Your Address</h2>
+                            <span class="subsection-text">Horizenal Road Street 1178<br>California, USA</span>
+                        </li>
+                        <img class="connector" src="../img/icons/Line%2085.svg" alt="location">
+                    </ul>
+                    <ul class="detail__lists">
+                        <li class="detail__list">
+                            <img src="../img/icons/Time.svg" alt="time" width="41" height="41">
+                        </li>
+                        <li class="detail__list">
+                            <h2 class="subsection-info">Delivery Time</h2>
+                            <span class="subsection-text">15 Minutes</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn__submit">Pending</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-total">
+        <img class="arrow-button__left" src="../img/icons/Arrow%2002.svg" alt="arrow">
+        <img class="arrow-button__right" src="../img/icons/Arrow%2003.svg" alt="arrow">
+        <div class="section-payment">
+            <img class="cart-illustration" src="../img/icons/Illustration%2003.svg" alt="illustration">
+            <div class="cart">
+                <div class="cart-wrapper">
+                    <ul class="subsection__lists">
+                        <li class="subsection__list">
+                            <img src="../img/chicken.png" alt="dish" width="98" height="102">
+                        <li class="subsection__list">
+                            <h3 class="title-subsection">Chicken Hell</h3>
+                            <span class="subsection-info">$12.99</span>
+                        </li>
+                    </ul>
+                    <ul class="subsection__lists_right">
+                        <li class="subsection__list_add">
+                            <button class="btn-minus">-</button>
+                            <span class="quantity">03</span>
+                            <button class="btn-plus">+</button>
+                        </li>
+                        <li class="subsection__list">
+                            <span class="overall-amount">$38.97</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cart">
+                <div class="cart-wrapper">
+                    <ul class="subsection__lists">
+                        <li class="subsection__list">
+                            <img src="../img/chicken02.png" alt="dish" width="98" height="95">
+                        <li class="subsection__list">
+                            <h3 class="title-subsection">Chicken Hell</h3>
+                            <span class="subsection-info">$19.99</span>
+                        </li>
+                    </ul>
+                    <ul class="subsection__lists_right">
+                        <li class="subsection__list_add">
+                            <button class="btn-minus">-</button>
+                            <span class="quantity">01</span>
+                            <button class="btn-plus">+</button>
+                        </li>
+                        <li class="subsection__list">
+                            <span class="overall-amount">$19.99</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="coupon">
+                <form class="search-form">
+                    <input class="input-coupon" type="search" placeholder="Apply Coupon">
+                </form>
+                <a href="#" class="btn btn__submit">Apply</a>
+            </div>
+
+            <ul class="total">
+                <ul class="total__lists line-dotted">
+                    <li class="total__item">Subtotal</li>
+                    <li class="total__item">$58.96</li>
+                </ul>
+                <ul class="total__lists line-dotted">
+                    <li class="total__item">Delivery</li>
+                    <li class="total__item">$3.59</li>
+                </ul>
+                <ul  class="total__lists">
+                    <li class="total-main__item">Total</li>
+                    <li class="total-main__item">$62.55</li>
+                </ul>
+            </ul>
+            <a href="#" class="btn btn__review">Review Payment</a>
+        </div>
+    </section>
+    <section class="section section-8">
+        <div class="section__discount">
+            <h2 class="title-discount">GET 50%</h2>
+            <div class="input">
+                <div class="input__group">
+                    <input class="input-text" type="text" placeholder="Enter your email">
+                    <a href="#" class="btn btn__subscribe">SUBSCRIBE</a>
+                </div>
+            </div>
+            <img class="input-img" src="../img/chicken02.png" alt="" width="274" height="274">
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-top line">
+        <div class="logo">
+            <img src="../img/icons/Logo.svg" alt="logo">
+            <a href="../index.html" class="logo-title">eatly</a>
+        </div>
+
+        <nav class="nav">
+            <ul class="navbar__lists">
+                <li class="navbar__list">
+                    <a href="../pages/menu.html" class="navbar__link">Menu</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/blog.html" class="navbar__link">Blog</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/pricing.html" class="navbar__link">Pricing</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/contact.html" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer-down">
+        <p class="description">&#169; 2023 EATLY All Rights Reserved.</p>
+
+        <nav class="nav">
+            <ul class="navbar__lists">
+                <li class="navbar__lists">
+                    <a href="#" class="navbar__link">
+                        <img src="../img/icons/instagram-11.svg" alt="social">
+                    </a>
+                </li>
+                <li class="navbar__lists">
+                    <a href="#" class="navbar__link">
+                        <img src="../img/icons/linkedin.svg" alt="social">
+                    </a>
+                </li>
+                <li class="navbar__lists">
+                    <a href="#" class="navbar__link">
+                        <img src="../img/icons/facebook.svg" alt="social">
+                    </a>
+                </li>
+                <li class="navbar__lists">
+                    <a href="#" class="navbar__link">
+                        <img src="../img/icons/twitter.svg" alt="social">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<!--scripts-->
+<script src="../js/btn.js"></script>
+<script src="../js/accordion.js" type="text/javascript"></script>
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="../js/swiper.js"></script>
+</body>
+</html>

@@ -144,3 +144,25 @@
     }
   }
 }
+
+.section-map {
+  .title {
+    &-subsection {
+      color: $color-black;
+
+      font-family: $font-f-poppins;
+      font-size: $font-12;
+      font-weight: $font-w-500;
+    }
+  }
+
+  .subsection {
+    &-info {
+      color: $color-grey-scale;
+
+      font-family: $font-f-poppins;
+      font-size: $font-8;
+      font-weight: $font-w-500;
+    }
+  }
+}

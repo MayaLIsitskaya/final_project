@@ -1,13 +1,29 @@
 .swiper {
-  //width: 100%;
+  width: 100%;
   height: auto;
 
-  &-scrollbar {
-    margin-top: 30px;
+  &-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  &-scrollbar-custom {
+    padding-left: 4rem;
+    background: $primary-color;
+    width: 900px;
+    height: 10px;
+    border-radius: 10px;
     bottom: 0;
+    background: $primary-color;
+    opacity: 0.3;
 
     &-drag {
-      background: $primary-color;
+      background-color: $primary-color;
+    }
+  }
+
+  &-slide {
+    &:not(.swiper-slide-active) {
+      filter: blur(1px);
     }
   }
 }
