@@ -215,5 +215,20 @@
     &:hover {
       @include opacity();
     }
-}
+  }
+
+  &__send {
+    width: 493px;
+    height: 76px;
+
+    border-radius: 15.876px;
+    background: $primary-color;
+
+    color: $background-color;
+    font-family: $font-f-poppins;
+    font-size: $font-20;
+    font-weight: $font-w-500;
+    letter-spacing: 0.624px;
+    padding: $p-1-5;
+  }
 }

@@ -6,9 +6,9 @@
     <title>Eatly</title>
 
     <!--custom styles-->
-    <link rel="stylesheet" href="./styles/css/main.min.css">
+    <link rel="stylesheet" href="../styles/css/main.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+<header class="header">
+    <div class="header-left">
+        <div class="logo">
+            <img src="../img/icons/Logo.svg" alt="logo" width="53" height="48">
+            <a href="../index.html" class="logo-title">eatly</a>
+        </div>
+
+        <nav class="nav">
+            <ul class="navbar__lists">
+                <li class="navbar__list">
+                    <a href="../pages/menu.html" class="navbar__link">Menu</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/blog.html" class="navbar__link">Blog</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/pricing.html" class="navbar__link">Pricing</a>
+                </li>
+                <li class="navbar__list">
+                    <a href="../pages/contact.html" class="navbar__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="account">
+        <ul class="account__lists">
+            <li class="account__list">
+                <a href="#" class="btn btn__login" id="login">Login</a>
+            </li>
+            <li class="account__list">
+                <a href="../pages/sign_up.html" class="btn btn__submit" id="signup">Sign up</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
 <main>
+    <div class="split left">
+        <div class="centered">
+            <h2>Sign Up To eatly</h2>
+            <ul class="social__lists">
+                <li class="social__list">
+                    <a href="https://play.google.com/store/games?hl=ru&gl=US" class="social__link">
+                        <img src="../img/icons/G.svg" alt="google-play">
+                    </a>
+                </li>
+                <li class="social__list">
+                    <a href="https://www.apple.com/store" class="social__link">
+                        <img src="../img/icons/Apple_logo_black%201.svg" alt="apple-store">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+        </div>
+    </div>
 </main>
 </body>
 </html>

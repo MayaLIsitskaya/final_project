@@ -1,29 +1,28 @@
 .swiper {
-  width: 100%;
-  height: auto;
-
-  &-wrapper {
-    width: 100%;
-    height: auto;
-  }
-  &-scrollbar-custom {
-    padding-left: 4rem;
-    background: $primary-color;
-    width: 900px;
-    height: 10px;
-    border-radius: 10px;
-    bottom: 0;
-    background: $primary-color;
-    opacity: 0.3;
-
-    &-drag {
-      background-color: $primary-color;
-    }
-  }
-
   &-slide {
-    &:not(.swiper-slide-active) {
-      filter: blur(1px);
+  }
+
+  &-button {
+    padding-top: $p-5;
+    padding-bottom: $p-6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    cursor: pointer;
+
+    &__next {
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+
+    &__prev {
+      &:hover {
+        transform: scale(1.3);
+      }
     }
   }
 }
