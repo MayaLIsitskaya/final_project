@@ -1,5 +1,4 @@
 .footer {
-  position: absolute;
   bottom: 0;
 
   background-color: $background-footer-color;
@@ -20,5 +19,13 @@
     justify-content: space-between;
     margin: $m-3 auto;
     padding-bottom: $p-1-5;
+
+    .description {
+      color: #999;
+
+      font-family: $font-f-inter;
+      font-size: $font-16;
+      font-weight: $font-w-600;
+    }
   }
 }

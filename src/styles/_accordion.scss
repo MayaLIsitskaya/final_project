@@ -1,51 +1,40 @@
 .accordion {
-
   &-container {
     position: relative;
-    margin: 10px 10px;
-
-    .top {
-      display: flex;
-      justify-content: space-between;
-    }
+    padding: 10px 10px;
   }
 
   &-label {
     position: relative;
-    color: #323142;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    cursor: pointer;
+    color: $color-black;
 
     font-family: $font-f-poppins;
-    font-size: $font-24;
+    font-size: $font-22;
     font-weight: $font-w-600;
-    line-height: 252.982%;
-    cursor: pointer;
 
     &::before {
-      //content: url("../../img/icons/Plus.svg");
-      //content: '+';
-
-      //font-size: 1.5rem;
-      //background-color: $primary-color;
-      //border-radius: 50%;
-      //width: 30px;
-      //height: 30px;
-      //color: white;
+      content: '+';
+      color: $primary-color;
+      font-weight: $font-w-400;
       position: absolute;
-      top: 52%;
-      right: -5px;
+      top: 50%;
+      right: 20px;
       transform: translateY(-50%);
+      font-size: 1.5em;
     }
   }
 
   &-content {
-    position: relative;
-    padding-top: 5px;
-    margin-bottom: 1rem;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.5s linear;
+    @include transition();
 
+    overflow: hidden;
+    height: 0;
     color: #686868;
+
     font-family: $font-f-poppins;
     font-size: $font-20;
     font-weight: $font-w-400;
@@ -54,13 +43,10 @@
   }
 }
 
-.accordion .accordion-container.active .accordion-content {
-  height: 150px;
-  padding: 10px;
+.accordion-container.active .accordion-content{
+  height: 70px;
 }
 
-
-.accordion .accordion-container.active .accordion-label::before {
-  content: url("../../img/icons/minus.svg");
+.accordion-container.active .accordion-label::before{
   content: '-';
 }

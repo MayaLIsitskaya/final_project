@@ -1,5 +1,24 @@
 .swiper {
-  &-slide {
+  cursor: pointer;
+
+  &-scrollbar-custom {
+    width: 50%;
+    border-radius: 15px;
+    height: 10px;
+    background-color: $color-lavander;
+
+    .drag-class {
+      border-radius: 15px;
+      background-color: $primary-color;
+      height: 100%;
+    }
+  }
+
+  &__line {
+    height: 5px;
+    width: 10%;
+    border-radius: 15px;
+    background-color: $color-lavander;
   }
 
   &-button {
@@ -25,4 +44,30 @@
       }
     }
   }
+
+  .swiper-pagination {
+    padding-right: 10rem;
+
+    &-bullet {
+      width: 25px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #6C5FBC;
+      margin: 0 10px;
+
+      &-active {
+        width: 40px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #6C5FBC;
+        margin: 0 10px
+      }
+    }
+  }
+}
+
+.scrollbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

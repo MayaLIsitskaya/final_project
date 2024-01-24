@@ -3,79 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eatly</title>
+    <title>Sign In</title>
 
     <!--custom styles-->
     <link rel="stylesheet" href="../styles/css/main.min.css">
+
+    <link rel="shortcut icon" href="../img/icons/Logo.svg">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Public+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-<header class="header">
-    <div class="header-left">
-        <div class="logo">
-            <img src="../img/icons/Logo.svg" alt="logo" width="53" height="48">
-            <a href="../index.html" class="logo-title">eatly</a>
+<div class="content">
+    <div class="left-side">
+        <div>
+            <a href="../index.html" class="logo">
+                <img src="../img/icons/Logo.svg" alt="logo">
+            </a>
         </div>
 
-        <nav class="nav">
-            <ul class="navbar__lists">
-                <li class="navbar__list">
-                    <a href="../pages/menu.html" class="navbar__link">Menu</a>
+        <div class="form-block">
+            <h2 class="title">Sign In To eatly</h2>
+
+            <ul class="app__lists">
+                <li class="app__list">
+                    <a href="#" class="app__link">
+                        <img class="app-icon" src="../img/icons/G.svg" alt="google" width="25" height="25">
+                    </a>
                 </li>
-                <li class="navbar__list">
-                    <a href="../pages/blog.html" class="navbar__link">Blog</a>
-                </li>
-                <li class="navbar__list">
-                    <a href="../pages/pricing.html" class="navbar__link">Pricing</a>
-                </li>
-                <li class="navbar__list">
-                    <a href="../pages/contact.html" class="navbar__link">Contact</a>
+                <li class="app__list">
+                    <a href="" class="app__link">
+                        <img class="app-icon" src="../img/icons/Apple_logo_black%201.svg" alt="apple" width="25"
+                             height="25">
+                    </a>
                 </li>
             </ul>
-        </nav>
-    </div>
 
-    <div class="account">
-        <ul class="account__lists">
-            <li class="account__list">
-                <a href="#" class="btn btn__login" id="login">Login</a>
-            </li>
-            <li class="account__list">
-                <a href="../pages/sign_up.html" class="btn btn__submit" id="signup">Sign up</a>
-            </li>
+            <div class="or">OR</div>
+
+            <form class="form-sign-up">
+                <div class="input-group">
+                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="User Icon">
+                            <g id="Icon">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M3.36153 4.4734C3.36153 2.25859 5.15698 0.463135 7.37179 0.463135C9.5866 0.463135 11.3821 2.25859 11.3821 4.4734C11.3821 6.6882 9.5866 8.48366 7.37179 8.48366C5.15698 8.48366 3.36153 6.6882 3.36153 4.4734ZM7.37179 1.87852C5.93868 1.87852 4.77692 3.04029 4.77692 4.4734C4.77692 5.90651 5.93868 7.06827 7.37179 7.06827C8.8049 7.06827 9.96667 5.90651 9.96667 4.4734C9.96667 3.04029 8.8049 1.87852 7.37179 1.87852Z"
+                                      fill="#C2C3CB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M3.59743 11.3144C2.42488 11.3144 1.47435 12.265 1.47435 13.4375V14.5588C1.47435 14.5758 1.48672 14.5904 1.50357 14.5931C5.38999 15.2277 9.35359 15.2277 13.24 14.5931C13.2569 14.5904 13.2692 14.5758 13.2692 14.5588V13.4375C13.2692 12.265 12.3187 11.3144 11.1462 11.3144H10.8245C10.7996 11.3144 10.7749 11.3184 10.7513 11.3261L9.9346 11.5928C8.26932 12.1365 6.47426 12.1365 4.80898 11.5928L3.99229 11.3261C3.96865 11.3184 3.94394 11.3144 3.91907 11.3144H3.59743ZM0.05896 13.4375C0.05896 11.4833 1.64319 9.89904 3.59743 9.89904H3.91907C4.09315 9.89904 4.26614 9.92657 4.43163 9.98061L5.24832 10.2473C6.62812 10.6978 8.11546 10.6978 9.49526 10.2473L10.312 9.98061C10.4774 9.92657 10.6504 9.89904 10.8245 9.89904H11.1462C13.1004 9.89904 14.6846 11.4833 14.6846 13.4375V14.5588C14.6846 15.2695 14.1695 15.8755 13.4681 15.99C9.43061 16.6492 5.31297 16.6492 1.27551 15.99C0.574051 15.8755 0.05896 15.2695 0.05896 14.5588V13.4375Z"
+                                      fill="#C2C3CB"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <input class="text-input" type="text" placeholder="FULL NAME" id="name" required>
+                </div>
+
+                <div class="input-group">
+                    <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Email">
+                            <path id="Icon" fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M0.432457 3.58608C0.192939 5.71156 0.203616 8.16293 0.536907 10.2798C0.721325 11.4511 1.72223 12.349 2.95773 12.4516L4.24895 12.5588C6.94132 12.7823 9.64893 12.7823 12.3413 12.5588L13.6325 12.4516C14.868 12.349 15.8689 11.4511 16.0533 10.2798C16.3866 8.16292 16.3973 5.71169 16.1578 3.58621C16.1268 3.33979 16.092 3.09371 16.0533 2.84804C15.8689 1.67675 14.868 0.778795 13.6325 0.676218L12.3413 0.569016C9.64892 0.345484 6.94132 0.345484 4.24895 0.569016L2.95773 0.676218C1.72222 0.778795 0.721325 1.67675 0.536907 2.84804C0.498234 3.09367 0.463417 3.33971 0.432457 3.58608ZM4.36001 1.78929C6.97848 1.57189 9.61176 1.57189 12.2302 1.78929L13.5215 1.89649C14.1664 1.95004 14.6889 2.41877 14.7851 3.03019C14.7951 3.09368 14.8049 3.15721 14.8143 3.22076L10.0598 5.74355C8.96231 6.32586 7.62788 6.32586 6.53043 5.74355L1.77594 3.22079C1.78539 3.15723 1.79512 3.09369 1.80512 3.03019C1.90139 2.41877 2.42386 1.95004 3.06879 1.89649L4.36001 1.78929ZM14.9712 4.5387C15.1371 6.3905 15.075 8.25627 14.7851 10.0976C14.6889 10.7091 14.1664 11.1778 13.5215 11.2313L12.2302 11.3385C9.61177 11.5559 6.97848 11.5559 4.36001 11.3385L3.06879 11.2313C2.42386 11.1778 1.90139 10.7091 1.80512 10.0976C1.5152 8.25628 1.45317 6.39052 1.619 4.53873L5.90761 6.81428C7.39239 7.60211 9.1978 7.60211 10.6826 6.81428L14.9712 4.5387Z"
+                                  fill="#C2C3CB"/>
+                        </g>
+                    </svg>
+                    <input class="text-input" type="email" placeholder="EMAIL" id="email" required>
+                </div>
+
+                <div class="input-group">
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.27692 12.3677C5.27692 11.645 5.86277 11.0592 6.58546 11.0592C7.30815 11.0592 7.89401 11.645 7.89401 12.3677C7.89401 13.0904 7.30815 13.6763 6.58546 13.6763C5.86277 13.6763 5.27692 13.0904 5.27692 12.3677Z"
+                              fill="#C2C3CB"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2.76595 7.65447L2.49077 5.17785C2.45549 4.86033 2.45549 4.53988 2.49077 4.22236L2.51063 4.04361C2.7213 2.14763 4.21182 0.647459 6.10641 0.424566C6.42467 0.387124 6.74622 0.387124 7.06448 0.424566C8.95906 0.647459 10.4496 2.14763 10.6603 4.04361L10.6801 4.22236C10.7154 4.53988 10.7154 4.86033 10.6801 5.17785L10.4049 7.65447L11.0039 7.70228C11.9484 7.77769 12.7197 8.48771 12.8728 9.42279C13.1922 11.3731 13.1922 13.3624 12.8728 15.3127C12.7197 16.2477 11.9484 16.9578 11.0039 17.0332L9.69873 17.1374C7.62653 17.3028 5.54444 17.3028 3.47224 17.1374L2.16707 17.0332C1.22254 16.9578 0.451279 16.2477 0.298166 15.3127C-0.0211822 13.3624 -0.0211822 11.3731 0.298166 9.42279C0.451279 8.48771 1.22254 7.77769 2.16707 7.70228L2.76595 7.65447ZM6.2593 1.72415C6.47598 1.69866 6.6949 1.69866 6.91159 1.72415C8.20148 1.8759 9.21628 2.89727 9.35971 4.18812L9.37957 4.36686C9.40418 4.58834 9.40418 4.81187 9.37957 5.03335L9.0994 7.55487C7.42516 7.44706 5.74572 7.44707 4.07148 7.55488L3.79131 5.03335C3.7667 4.81187 3.7667 4.58834 3.79131 4.36686L3.81117 4.18812C3.9546 2.89727 4.9694 1.8759 6.2593 1.72415ZM9.5946 8.90248C7.59171 8.74259 5.57926 8.74259 3.57637 8.90248L2.2712 9.00668C1.92668 9.03418 1.64536 9.29317 1.58951 9.63424C1.2931 11.4445 1.2931 13.2909 1.58951 15.1012C1.64536 15.4423 1.92668 15.7013 2.2712 15.7288L3.57637 15.833C5.57926 15.9929 7.59171 15.9929 9.5946 15.833L10.8998 15.7288C11.2443 15.7013 11.5256 15.4423 11.5815 15.1012C11.8779 13.2909 11.8779 11.4445 11.5815 9.63424C11.5256 9.29317 11.2443 9.03418 10.8998 9.00668L9.5946 8.90248Z"
+                              fill="#C2C3CB"/>
+                    </svg>
+                    <input class="text-input" type="password" placeholder="PASSWORD" id="password" required>
+                </div>
+
+                <a class="btn__singup">SIGN UP</a>
+
+                <span class="text">Already Have An Account?
+                    <a href="#" class="text-login">Log In</a>
+                </span>
+            </form>
+        </div>
+
+        <ul class="privacy__lists">
+            <li class="privacy__list">Privacy Policy</li>
+            <li class="privacy__list">Copyright 2022</li>
         </ul>
     </div>
-</header>
 
-<main>
-    <div class="split left">
-        <div class="centered">
-            <h2>Sign Up To eatly</h2>
-            <ul class="social__lists">
-                <li class="social__list">
-                    <a href="https://play.google.com/store/games?hl=ru&gl=US" class="social__link">
-                        <img src="../img/icons/G.svg" alt="google-play">
-                    </a>
-                </li>
-                <li class="social__list">
-                    <a href="https://www.apple.com/store" class="social__link">
-                        <img src="../img/icons/Apple_logo_black%201.svg" alt="apple-store">
-                    </a>
-                </li>
-            </ul>
+    <div class="right-side">
+        <div class="color-box"></div>
+        <img src="../img/icons/Vector.svg" alt="cross" width="13" height="13" class="right-image__cross">
+        <img src="../img/icons/Group.svg" alt="squares" width="113" height="113" class="right-image__square">
+        <img src="../img/icons/group%20stars.svg" alt="crosses" width="31" height="41" class="right-image__crosses">
+        <div class="section-1 dashboard-1">
+            <img src="../img/Food%20Image.png" class="dashboard-img" width="77" height="79">
+            <h3 class="dashboard-title">Chicken Hell</h3>
+            <h3 class="dashboard-title__description">On The Way</h3>
+            <p class="dashboard-text">3:09 PM</p>
+        </div>
+        <img src="../img/icons/chart.png" alt="chart" width="207" height="205" class="right-image__chart">
+        <img src="../img/Food%20Image.png" class="around-img" width="360" height="358">
+        <img src="../img/icons/half round.svg" class="right-image__round" width="96" height="48">
+
+        <div class="right-down">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <h3 class="info-title">Find Foods With Love </h3>
+                            <p class="info-description">Eatly Is The Food Delivery Dashboard And Having More Than 2K+
+                                Dishes Including Asian,
+                                Chinese, Italians And Many More. Our Dashboard Helps You To Manage Orders And Money.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <h3 class="info-title">Find Foods With Love </h3>
+                            <p class="info-description">Eatly Is The Food Delivery Dashboard And Having More Than 2K+
+                                Dishes Including Asian,
+                                Chinese, Italians And Many More. Our Dashboard Helps You To Manage Orders And Money.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="info">
+                            <h3 class="info-title">Find Foods With Love </h3>
+                            <p class="info-description">Eatly Is The Food Delivery Dashboard And Having More Than 2K+
+                                Dishes Including Asian,
+                                Chinese, Italians And Many More. Our Dashboard Helps You To Manage Orders And Money.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 30px"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
-
-    <div class="split right">
-        <div class="centered">
-        </div>
-    </div>
-</main>
+</div>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="module" src="../js/swiper.js"></script>
+<script src="../js/form-singup.js"></script>
 </html>
