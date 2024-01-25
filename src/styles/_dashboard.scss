@@ -4,7 +4,9 @@
       position: absolute;
       left: 280px;
       top: -3rem;
+
       z-index: 10;
+
       width: 328.7px;
       height: 89.4px;
       border-radius: 16.4px;
@@ -65,11 +67,14 @@
     &-3,
     &-4 {
       position: relative;
+
       z-index: 10;
+
       width: 328.7px;
       height: 89.4px;
       border-radius: 16.4px;
       background-color: $color-white;
+
       margin-bottom: $m-1;
     }
 
@@ -121,7 +126,7 @@
   }
 }
 
-.right-side {
+.signup-content .right-side {
   .around-img {
     position: absolute;
     top: 12rem;
@@ -132,7 +137,9 @@
     position: absolute;
     top: 8rem;
     left: 14rem;
+
     z-index: 10;
+
     width: 344px;
     height: 88px;
     border-radius: 20px;
@@ -150,6 +157,7 @@
   .dashboard-title {
     position: absolute;
     top: 1.5rem;
+
     font-family: $font-f-poppins;
     font-size: $font-18;
     font-weight: $font-w-600;
@@ -159,6 +167,7 @@
     &__description {
       position: absolute;
       top: 3rem;
+
       font-family: $font-f-poppins;
       font-size: $font-12;
       font-weight: $font-w-500;
@@ -170,6 +179,7 @@
   .dashboard-text {
     position: absolute;
     top: 3.5rem;
+
     font-family: $font-f-poppins;
     font-size: $font-12;
     font-weight: $font-w-500;

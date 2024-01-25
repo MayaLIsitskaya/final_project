@@ -1,0 +1,84 @@
+.section-8 {
+  .input {
+    padding-top: $p-4;
+    padding-left: $p-4;
+
+    &__group {
+      padding-top: 1.2rem;
+      padding-left: $p-1;
+
+      width: 439.7px;
+      height: 68px;
+      border-radius: 14.2px;
+      background-color: $color-white;
+      box-shadow: 0px 7.253px 45.333px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    &-text {
+      color: $primary-color;
+
+      font-family: $font-f-poppins;
+      font-size: $font-16;
+      font-weight: $font-w-400;
+      letter-spacing: 0.488px;
+
+      border: none;
+      outline: none;
+    }
+
+    &-img {
+      position: relative;
+      top: -10rem;
+      left: 55rem;
+    }
+  }
+}
+
+.section-1 {
+  .search {
+    &-form {
+      position: relative;
+
+      margin-top: $m-4;
+
+      width: 47rem;
+      height: 4.6rem;
+      border-radius: 15px;
+      background-color: $background-footer-color;
+    }
+
+    &-button {
+      position: absolute;
+      top: 1.4rem;
+      left: 2rem;
+
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    &-input {
+      width: 40rem;
+
+      position: absolute;
+      top: 1.4rem;
+      left: 5rem;
+
+      color: $primary-color;
+      border: none;
+      appearance: none;
+      outline: none;
+      background: none;
+
+      font-family: $font-f-poppins;
+      font-size: $font-20;
+      font-weight: $font-w-500;
+      line-height: 117.5%;
+      letter-spacing: -0.411px;
+
+      &::-webkit-search-cancel-button {
+        appearance: none;
+      }
+    }
+  }
+}

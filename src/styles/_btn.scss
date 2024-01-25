@@ -16,15 +16,18 @@
   cursor: pointer;
 
   &__login {
+    @include transition();
+    border-radius: 12.4px;
     color: $color-grey-navbar;
     background-color: $background-color;
 
     &:hover {
-      @include opacity();
+      @include btn-purple();
     }
   }
 
   &__submit {
+    @include transition();
     border-radius: 12.4px;
 
     font-size: $font-16;
@@ -33,24 +36,29 @@
     letter-spacing: 0.163px;
 
     &:hover {
-      @include opacity();
+      @include btn-white();
     }
   }
 
-
   &__switch {
+    @include transition();
     border-radius: 12.4px;
     border: 1px solid $primary-color;
-    background-color:  $background-color;
+    background-color: $background-color;
 
     color: $primary-color;
     font-size: $font-16;
     font-family: $font-f-poppins;
     font-weight: $font-w-500;
-    letter-spacing: 0.163px;
     margin-left: $m-1;
+    transition: width 0.5s;
+
+    &:hover {
+      @include btn-purple();
+    }
 
     &-off {
+      padding-top: $p-1-5;
       margin-left: 0;
       display: block;
       width: 377px;
@@ -58,18 +66,19 @@
       font-size: $font-20;
 
       border-radius: 15.138px 0px 0px 15.138px;
-      border: 2.171px solid $primary-color;
+      border: 1px solid $primary-color;
       background: #F3F5F6;
 
       box-shadow: 0px 21.785px 48.411px 0px rgba(211, 209, 216, 0.25);
 
-      &:active {
-        opacity: 0.3;
+      &:hover {
+        @include btn-purple();
+        border: 0.5px solid $background-color;
       }
     }
 
     &-on {
-      padding-top: $p-1-3;
+      padding-top: $p-1-5;
       width: 377px;
       height: 75px;
       display: block;
@@ -79,8 +88,8 @@
       background: $primary-color;
       box-shadow: 0px 21.785px 48.411px 0px rgba(211, 209, 216, 0.25);
 
-      &:active {
-        opacity: 0.3;
+      &:hover {
+        @include btn-white();
       }
     }
   }
@@ -108,6 +117,7 @@
   }
 
   &__add {
+    @include transition();
     display: inline-block;
     text-align: center;
     padding-top: 0.5rem;
@@ -122,7 +132,9 @@
     cursor: pointer;
 
     &:hover {
-      @include opacity();
+      background: $color-white;
+      border: 0.5px solid $color-black;
+      color: $color-black;
     }
   }
 
@@ -154,6 +166,7 @@
   }
 
   &__subscribe {
+    @include transition();
     color: #F7F8FA;
     background-color: $primary-color;
     font-size: $font-14;
@@ -162,6 +175,10 @@
 
     letter-spacing: 0.443px;
     margin-left: $m-6;
+
+    &:hover {
+      @include btn-white();
+    }
   }
 
   &-minus {
@@ -174,6 +191,11 @@
 
     font-size: $font-18;
     cursor: pointer;
+
+    &:hover {
+      background: $color-black;
+      color: $color-white;
+    }
   }
 
   &-plus {
@@ -186,9 +208,16 @@
     border: none;
 
     cursor: pointer;
+
+    &:hover {
+      background: $color-white;
+      border: 0.5px solid $color-black;
+      color: $color-black;
+    }
   }
 
   &__apply {
+    @include transition();
     display: inline-block;
     width: 19rem;
     height: 3.75rem;
@@ -202,10 +231,15 @@
     font-family: $font-f-poppins;
     font-weight: $font-w-600;
     letter-spacing: -0.137px;
+
+    &:hover {
+      @include btn-white();
+    }
   }
 
   &__review {
-    padding-top: 1.4rem;
+    @include transition();
+    padding-top: $p-1-5;
     width: 681px;
     height: 77px;
 
@@ -217,11 +251,12 @@
     letter-spacing: -0.2px;
 
     &:hover {
-      @include opacity();
+      @include btn-white();
     }
   }
 
   &__send {
+    @include transition();
     width: 493px;
     height: 76px;
 
@@ -234,6 +269,10 @@
     font-weight: $font-w-500;
     letter-spacing: 0.624px;
     padding: $p-1-5;
+
+    &:hover {
+      @include btn-white();
+    }
   }
 
   &__singup {
@@ -254,21 +293,7 @@
     cursor: pointer;
 
     &:hover {
-      background: #6C5FBC;
-      opacity: 0.7;
+      @include btn-white();
     }
-  }
-
-  &__push {
-    width: 146px;
-    height: 58.944px;
-    border-radius: 12.412px;
-    background: #6C5FBC;
-    color: #F9F9F9;
-
-    font-family: $font-f-poppins;
-    font-size: 16.271px;
-    font-weight: 500;
-    letter-spacing: 0.488px;
   }
 }

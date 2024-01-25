@@ -1,73 +1,6 @@
 .section {
   padding: $p-6 0;
 
-  &__left {
-    width: 70%;
-  }
-
-  &__right {
-    width: 30%;
-  }
-
-  &__bgr {
-    position: relative;
-    margin-bottom: 27rem;
-
-    width: 1240px;
-    height: 334px;
-    border: #6C5FBC;
-    background-color: $primary-color;
-
-    .title {
-      text-align: center;
-      padding-top: $p-3;
-      color: $background-color;
-
-      font-family: $font-f-poppins;
-      font-size: $font-40;
-      font-weight: $font-w-600;
-      line-height: 120%;
-      letter-spacing: -1px;
-    }
-
-    .price-arrow {
-      position: absolute;
-      top: 2rem;
-      left: 26.5rem;
-    }
-
-    .price-dashboard {
-      position: absolute;
-      left: 5rem;
-
-      &-illustration {
-        position: absolute;
-        top: 8rem;
-        left: 67rem;
-      }
-    }
-  }
-
-  &__cards {
-    @include flex();
-    gap: 2rem;
-
-    &_item {
-      @include transition();
-
-      background-color: #FFFFFF;
-      border-radius: 30px;
-      height: 18rem;
-      box-shadow: 5.946px 71.348px 35.674px 0px rgba(229, 229, 229, 0.70);
-
-      cursor: pointer;
-
-      &:hover {
-      transform: scale(1.1);
-    }
-    }
-  }
-
   &__block {
     display: flex;
     justify-content: space-between;
@@ -94,14 +27,44 @@
     }
   }
 
+  &__left {
+    width: 70%;
+  }
+
+  &__right {
+    width: 30%;
+  }
+
+  &__cards {
+    @include flex();
+    gap: 2rem;
+
+    &_item {
+      @include transition();
+
+      background-color: $color-white;
+      border-radius: 30px;
+      height: 18rem;
+      box-shadow: 5.946px 71.348px 35.674px 0px rgba(229, 229, 229, 0.70);
+
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
   &__dish {
     @include container();
     @include flex();
+
     justify-content: space-between;
     gap: 2rem;
 
     &_item {
       @include transition();
+
       box-shadow: 6.848px 82.181px 41.091px 0px rgba(229, 229, 229, 0.70);
       background-color: $color-white;
       height: 24rem;
@@ -124,6 +87,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+
         margin-top: $m-2;
 
         &_center {
@@ -144,13 +108,13 @@
 
     .around {
       position: absolute;
-      width: 422px;
-      height: 424px;
       top: -8%;
       left: 96px;
-      background-color: $color-around;
 
+      width: 422px;
+      height: 424px;
       border-radius: 50%;
+      background-color: $color-around;
 
       &-img {
         position: absolute;
@@ -160,8 +124,8 @@
     }
 
     .arrow {
-      position: relative;
-      top: -94%;
+      position: absolute;
+      top: 60px;
       left: 383px;
     }
   }
@@ -177,14 +141,13 @@
     }
   }
 
-
   &-2 {
     padding: $p-3 $p-20;
+
     background-image: url("../../img/BG.png");
     height: 13.7rem;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: $m-6;
 
     .row {
       &__items {
@@ -199,6 +162,7 @@
           font-size: $font-43;
           font-weight: $font-w-700;
           line-height: 125%;
+
           color: $color-white;
         }
 
@@ -207,6 +171,7 @@
           font-size: $font-14;
           font-weight: $font-w-500;
           line-height: 150%;
+
           color: $color-lavander;
         }
       }
@@ -215,22 +180,23 @@
 
   &-3 {
     @include container();
-    margin-bottom: $m-6;
 
     .marked {
       &__list {
+        padding-left: $p-1-5;
         list-style: disc;
-        color: $color-grey-text;
+
         font-family: $font-f-poppins;
         font-size: $font-20;
         font-weight: $font-w-400;
         line-height: 150%;
 
+        color: $color-grey-text;
+
         &_item {
           padding-bottom: 1rem;
         }
       }
-
     }
 
     .img {
@@ -238,11 +204,13 @@
         position: relative;
         top: 12%;
         left: -15px;
+
         animation: anim-vector 4s ease-in-out 0s infinite normal forwards;
       }
 
       &-arrow-right {
         padding-left: $p-0-5;
+
         position: relative;
         top: 1.5%;
       }
@@ -289,17 +257,17 @@
     }
 
     .card {
-
       &-info {
         display: flex;
         align-items: center;
         gap: 0.5rem;
+
         font-family: $font-f-manrope;
         font-size: $font-18;
         font-weight: $font-w-400;
         line-height: 133.333%;
-
         color: $color-card-info;
+
         margin-left: $m-1-5;
         margin-top: -0.5rem;
 
@@ -364,54 +332,280 @@
   }
 
   &__discount {
+    position: relative;
+
     width: 1214px;
     height: 260px;
     border-radius: 30px;
     background-color: $primary-color;
 
     &_icon {
-      position: relative;
+      position: absolute;
       left: 22.2rem;
       top: -16.4rem;
 
       &-1 {
-        position: relative;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.subsection {
+  &__block {
+    padding: $p-2 $p-2;
+    width: 534px;
+    height: 466.465px;
+
+    background-color: $color-white;
+    border: 1px solid #EDF2F7;
+    border-radius: 21.5px;
+
+    box-shadow: 6px 82px 41px 1px rgba(50, 49, 66, 0.19);
+
+    &_row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__card {
+    margin-top: $m-2;
+    padding: $p-1-5;
+
+    width: 460px;
+    height: auto;
+    box-shadow: 11px 2px 39px 7px rgba(148, 162, 172, 0.2);
+    border-radius: 18.8px;
+    border: 1px solid #EDF2F7;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    &_price {
+      padding-left: $p-6;
+
+      color: #1A202C;
+      font-family: $font-f-manrope;
+      font-size: $font-22;
+      font-weight: $font-w-800;
+      line-height: 150%;
+
+      letter-spacing: 0.314px;
+    }
+
+    &_scale {
+      padding-top: $p-1-5;
+    }
+
+    .subsection-quote {
+      display: inline-block;
+      padding-left: 3.5rem;
+    }
+  }
+
+  &-image {
+    position: relative;
+    border-radius: 50%;
+  }
+
+  &-description {
+    text-align: justify;
+    margin-top: $m-2;
+
+    color: #636363;
+    font-family: $font-f-poppins;
+    font-size: $font-16;
+    font-style: italic;
+    font-weight: $font-w-400;
+    line-height: 145%;
+  }
+
+  &-scale {
+    margin-top: $m-2;
+  }
+}
+
+.banner {
+  &-text {
+    padding: 2.5rem $p-3;
+    display: flex;
+    flex-direction: column;
+
+    font-family: $font-f-poppins;
+    font-weight:$font-w-800;
+  }
+
+  &-title {
+    color: $background-color;
+
+    font-size: $font-75;
+  }
+
+  &-subtitle {
+    color: $primary-color;
+
+    font-size: $font-88;
+  }
+
+  &-image {
+    position: relative;
+    top: -9.5rem;
+    left: 26rem;
+  }
+
+  &-illustration {
+    position: relative;
+    top: -33.5rem;
+    left: 47rem;
+  }
+}
+
+.category {
+  @include flex();
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  margin-top: $m-1;
+  margin-bottom: $m-2;
+
+  &-title {
+    margin-top: 10px;
+  }
+
+  &__item {
+    width: 66px;
+    height: 96px;
+    padding-top: 16px;
+    border-radius: 10px;
+
+    text-align: center;
+    font-family: $font-f-poppins;
+    font-size: $font-12;
+    font-weight: $font-w-500;
+
+    filter: drop-shadow(0px 14.71px 22.065px rgba(135, 125, 200, 0.25));
+
+    cursor: pointer;
+
+    &:hover {
+      width: 66px;
+      height: 96px;
+      padding-top: 13px;
+      transition-duration: 150ms;
+    }
+
+    &_orange {
+      background-color: #FFDE8A;
+      color: $color-orange;
+
+      &:hover {
+        border: 3px solid $color-orange-line;
+      }
+    }
+
+    &_red {
+      background-color: #F7C5BA;
+      color: $color-carrot-red;
+
+      &:hover {
+        border: 3px solid rgba(251, 71, 29, 0.50);;
+      }
+    }
+
+    &_darkorange {
+      background-color: #EDB66B;
+      color: #E28B14;
+
+      &:hover {
+        border: 3px solid rgba(226, 139, 20, 1);
+      }
+    }
+
+    &_blue {
+      background-color: #5A85FF;
+      color: #002073;
+
+      &:hover {
+        border: 3px solid rgba(0, 32, 115, 1);
       }
     }
   }
 
-  .input {
-    padding-top: $p-4;
-    padding-left: $p-4;
+  &-img {
+    display: inline-block;
+    vertical-align: center;
+  }
+}
 
-    &__group {
-      padding-top: 1.2rem;
-      padding-left: $p-1;
+.options {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-      width: 439.7px;
-      height: 68px;
-      border-radius: 14.2px;
-      background-color: $color-white;
-      box-shadow: 0px 7.253px 45.333px 0px rgba(0, 0, 0, 0.10);
+  margin-bottom: $m-2;
+
+  &-item {
+    padding-top: $p-1;
+    color: $color-dark-grey;
+
+    font-family: $font-f-poppins;
+    font-size: $font-16;
+    font-weight: $font-w-500;
+    line-height: 187.02%;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color;
     }
+  }
+}
 
-    &-text {
-      color: #878787;
 
-      font-family: $font-f-poppins;
-      font-size: $font-16;
-      font-weight: $font-w-400;
-      letter-spacing: 0.488px;
+.sorting {
+  padding-top: $p-1-3;
 
-      border: none;
-      outline: none;
+  &__lists {
+    @include flex();
+    justify-content: space-around;
+    position: relative;
+    top: -1rem;
+  }
+
+  &__list {
+    color: $color-light-grey;
+
+    font-family: $font-f-poppins;
+    font-size: $font-10;
+    font-weight: $font-w-500;
+    line-height: 280%;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $primary-color;
     }
+  }
 
-    &-img {
-      position: relative;
-      top: -10rem;
-      left: 55rem;
-    }
+  &-move {
+    position: relative;
+    top: -1.2rem;
+    left: 2rem;
+
+    cursor: pointer;
+  }
+}
+
+.switch {
+  margin-top: $m-3;
+
+  &__lists {
+    display: flex;
   }
 }
 
@@ -450,15 +644,30 @@
     &-container {
       text-align: center;
       border-radius: 30px;
-      border: 1.593px solid #F4F4F6;
+      border: 1.593px solid $background-color;
       background: $color-white;
       box-shadow: 7.572px 90.862px 45.431px 0px rgba(229, 229, 229, 0.70);
+
+      animation: cardAnim 3s linear 0s 1 normal none;
     }
 
     &-content {
-      padding: $p-1-5;
       @include flex();
       justify-content: space-between;
+
+      padding: $p-1-5;
+    }
+
+    @keyframes cardAnim {
+      0% {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
   }
 
@@ -513,7 +722,6 @@
   @include container();
 
   .background {
-    //margin-bottom: $m-8;
     position: relative;
     height: 733px;
 
@@ -595,7 +803,6 @@
         background-color: $color-black;
 
         .subsection {
-
           &__lists {
             padding: $p-1-5;
 
@@ -605,7 +812,7 @@
 
             .title {
               margin: 0 auto;
-              color: #F3F5F6;
+              color: $background-color;
 
               font-size: $font-22;
               font-weight: $font-w-500;
@@ -637,12 +844,12 @@
           display: flex;
           align-items: center;
           gap: 2rem;
+
           padding-bottom: $p-1-3;
         }
       }
 
       .subsection {
-
         &-info {
           font-size: $font-12;
           line-height: 140%;
@@ -704,6 +911,7 @@
 
     .title-subsection {
       padding-bottom: 0.5rem;
+
       color: $color-black;
       font-family: $font-f-poppins;
       font-size: $font-22;
@@ -720,7 +928,7 @@
     }
 
     .quantity {
-      color: $color-black;;
+      color: $color-black;
       font-family: $font-f-poppins;
       font-size: $font-18;
       font-weight: $font-w-400;
@@ -739,6 +947,7 @@
       &__lists {
         &_right {
           padding-right: $p-2;
+
           display: flex;
           flex-direction: column;
           justify-content: space-around;
@@ -773,7 +982,7 @@
         background: url("../../img/icons/coupon.svg") no-repeat 2rem 27px;
         background-color: transparent;
 
-        color: #C2C3CB;
+        color: $primary-color;
         font-family: $font-f-poppins;
         font-size: 18px;
         font-style: normal;
@@ -789,12 +998,6 @@
           appearance: none;
         }
       }
-
-      .btn__submit {
-        //height: 73px;
-        //position: relative;
-        //top: -0.2rem;
-      }
     }
   }
 
@@ -804,14 +1007,16 @@
 
     &__lists {
       width: 680px;
+
       display: flex;
       justify-content: space-between;
+
       padding: $p-0-5 0 $p-0-5 0;
     }
 
     &__item {
-      color:  $color-black;
       opacity: 0.7;
+      color:  $color-black;
       font-family: $font-f-poppins;
       font-size: $font-20;
       font-weight: $font-w-400;
@@ -850,7 +1055,6 @@
   }
 }
 
-
 .article {
   @include flex();
   justify-content: space-between;
@@ -886,6 +1090,7 @@
 
     &__title {
       margin: $m-2 0 $m-1 0;
+
       display: flex;
       justify-content: left;
       color: #252525;
@@ -898,8 +1103,7 @@
   }
 
   &-subtitle {
-    color: #8D8D8D;
-
+    color: $color-light-grey;
     font-family: $font-f-poppins;
     font-size: $font-12;
     font-weight: $font-w-400;
@@ -917,8 +1121,8 @@
     position: relative;
     top: 0.55rem;
     left: 3.3rem;
-    color: #B7B4B4;
 
+    color: $color-light-grey;
     font-family: $font-f-poppins;
     font-size: $font-16;
     font-weight: $font-w-500;
@@ -928,13 +1132,12 @@
 
 .section-article {
   @include container();
-  margin-bottom: $m-10;
+  margin-bottom: $m-3;
 
   .article {
     &-image {
       display: block;
       padding-top: $p-2;
-      padding-bottom: $p-2;
     }
   }
 }
@@ -946,6 +1149,8 @@
 }
 
 .section__left {
+  padding-bottom: $p-6;
+
   &_top,
   &_middle,
   &_footer {
@@ -954,7 +1159,6 @@
 
   .text {
     color: #252525;
-
     text-align: justify;
     font-family: $font-f-poppins;
     font-size: $font-22;
@@ -966,8 +1170,10 @@
 
   .marked {
     &__list {
-      padding-left: 1rem;
+      padding-left: $p-1;
+
       color: #252525;
+
       list-style: disc;
       font-family: $font-f-poppins;
       font-size: $font-22;
@@ -975,7 +1181,7 @@
       line-height: 202.496%;
 
       &_item {
-        padding-bottom: 1rem;
+        padding-bottom: $p-1;
       }
     }
   }
@@ -1013,10 +1219,11 @@
 
     &__title {
       margin: $m-1 0 $m-1 0;
+
       display: flex;
       justify-content: left;
-      color: #252525;
 
+      color: #252525;
       font-family: $font-f-poppins;
       font-size: $font-18;
       font-weight: $font-w-600;
@@ -1040,18 +1247,20 @@
 .section-contact {
   .left {
     position: relative;
-    background: $primary-color;
-    width: 531px;
-    height: 818px;
+
     padding-top: $p-5;
     margin-bottom: $m-10;
+
+    width: 531px;
+    height: 818px;
+
+    background: $primary-color;
 
     .title {
       color: $background-color;
       text-align: center;
 
       font-size: $font-48;
-      font-style: normal;
       font-weight: $font-w-600;
       line-height: 105%;
     }
@@ -1080,7 +1289,6 @@
   justify-content: space-between;
 
   .right {
-
     margin: 0 $m-6;
 
     .title-3 {
@@ -1088,46 +1296,11 @@
       line-height: 138.512%;
       margin-bottom: $m-3;
     }
-
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .field {
-        padding: $p-1-3 $p-0-5 $p-1-3 $p-1-5;
-        width: 493px;
-        height: 79px;
-
-        border-radius: 16.892px;
-        border: 2px solid $primary-color;
-
-        background: $background-color;
-        margin-bottom: $m-1;
-
-        color: #B6B6B6;
-        font-family: $font-f-inter;
-        font-size: 16.892px;
-        font-weight: 600;
-
-        &-problem {
-          margin: $m-2 auto 4.5rem auto;
-          height: 345px;
-        }
-      }
-
-      .button-arrow {
-        position: absolute;
-        top: 65rem;
-        left: 47rem;
-        transform: rotate(-35deg);
-      }
-    }
   }
 }
 }
 
-.content {
+.signup-content {
   height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -1168,10 +1341,12 @@
     }
 
     &__list {
-      padding-top: 0.5rem;
+      padding-top:$p-0-5;
+
       width: 130.445px;
       height: 45.063px;
-      background: #F5F5F5;
+
+      background: $background-color;
       border-radius: 9.487px;
       text-align: center;
 
@@ -1186,104 +1361,13 @@
   .or {
     display: flex;
     justify-content: center;
-    padding-top: 1.5rem;
+    padding-top: $p-1-5;
     color: rgba(50, 49, 66, 0.35);
 
     font-family: $font-f-poppins;
     font-size: 14.23px;
-    font-style: normal;
     font-weight: 500;
     letter-spacing: 0.427px;
-  }
-}
-
-.form-sign-up {
-  padding-top: $p-2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-
-  .input-group {
-    position: relative;
-    width: 271.958px;
-    height: 52.969px;
-    border-radius: 10.151px;
-    background: #F5F5F5;
-  }
-
-  .input-group svg {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-  }
-
-  .input-icon {
-    position: absolute;
-    left: 6rem;
-  }
-
-  .text-input {
-    position: absolute;
-    left: 3rem;
-
-    padding-top: 1rem;
-    color: $primary-color;
-
-    font-family: $font-f-poppins;
-    font-size: 11.859px;
-
-    font-weight: 600;
-
-    letter-spacing: 0.83px;
-
-    border: none;
-    appearance: none;
-    outline: none;
-    background: none;
-
-    &-password {
-      position: absolute;
-      top:1rem;
-      right:1rem;
-    }
-  }
-
-  .text {
-    color: #3E3E3E;
-
-    font-family: $font-f-poppins;
-    font-size: 13.44px;
-
-    font-weight: 400;
-
-    letter-spacing: 0.134px;
-  }
-
-  .text-login {
-    color: #6C5FBC;
-    font-family: $font-f-poppins;
-    font-size: 13.44px;
-
-    font-weight: 700;
-    letter-spacing: 0.134px;
-  }
-}
-
-.privacy {
-  &__lists {
-    display: flex;
-    justify-content: space-between;
-    padding: $p-3  $p-3;
-  }
-
-  &__list {
-    color: #718096;
-    font-family: $font-f-poppins;
-    font-size: 11.378px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: 0.142px;
   }
 }
 
@@ -1303,8 +1387,9 @@
   }
 
   .info-title {
-    color: #FFF;
     padding-bottom: $p-0-5;
+
+    color: $color-white;
     text-align: center;
     font-family: $font-f-manrope;
     font-size: 40px;
@@ -1313,7 +1398,7 @@
   }
 
   .info-description {
-    color: var(--Others-White, #FFF);
+    color: $color-white;
     text-align: center;
     font-family: $font-f-manrope;
     font-size: 14px;
@@ -1324,6 +1409,7 @@
 
   .swiper-pagination {
     padding-left: $p-10;
+
     &-bullet {
       width: 5px;
       height: 5px;
@@ -1371,17 +1457,4 @@
     }
   }
 }
-
-
-
-@media screen  and (max-width: 900px){
-  .col-1 {
-    .buttons {
-      .button-right {
-        display: block;
-      }
-    }
-  }
-}
-
 
