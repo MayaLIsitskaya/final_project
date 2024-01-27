@@ -1,10 +1,11 @@
 .footer {
-  bottom: 0;
+  margin-top: $m-8;
+  padding-top: $p-6;
 
   background-color: $background-footer-color;
   height: 20rem;
   width: 100%;
-  padding-top: $p-6;
+
 
   &-top {
     @include container();
@@ -29,3 +30,169 @@
     }
   }
 }
+
+@media screen and (max-width: 1260px) {
+  .footer {
+    &-top {
+      max-width: 1000px;
+    }
+
+    &-down {
+      max-width: 1000px;;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1010px) {
+  .footer {
+
+    &-top {
+      max-width: 90%;
+    }
+
+    &-down {
+      max-width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .footer {
+    &-top {
+      max-width: 90%;
+    }
+
+    &-down {
+      max-width: 90%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 620px) {
+  .footer {
+    padding-top: 2rem;
+    height: auto;
+
+    &-top {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-bottom: $p-1-5;
+
+      .logo {
+        &-title {
+          font-size: $font-18 ;
+        }
+      }
+
+      .nav {
+        margin-left: 0;
+      }
+      .navbar {
+        &__lists {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          padding-top: $p-2;
+        }
+      }
+    }
+
+    &-down {
+      max-width: 400px;
+      display: block;
+
+      .nav {
+        position: relative;
+        top: -21rem;
+        left: 9.5rem;
+        .navbar {
+          &__lists {
+              gap: 1rem;
+          }
+        }
+      }
+
+      .nav svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .description {
+        font-size: 13px;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    padding-top: 2rem;
+    height: auto;
+
+    &-top {
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      padding-bottom: $p-1-5;
+
+      .logo {
+        &-title {
+          font-size: $font-18 ;
+        }
+      }
+
+      .nav {
+        margin-left: 0;
+      }
+
+      .navbar {
+        &__lists {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          padding-top: $p-2;
+        }
+      }
+    }
+
+    &-down {
+      max-width: 300px;
+      display: block;
+
+      .nav {
+        position: relative;
+        top: -21rem;
+        left: 5rem;
+
+        .navbar {
+          &__lists {
+            gap: 1rem;
+          }
+        }
+      }
+
+      .nav svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .description {
+        font-size: 13px;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+

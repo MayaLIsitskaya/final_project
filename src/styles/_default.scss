@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -16,13 +16,6 @@ body {
 
 body {
   margin: 0 auto;
-}
-
-.account {
-  &__lists {
-    @include flex();
-    gap: 0.5rem;
-  }
 }
 
 .logo {
@@ -49,6 +42,13 @@ body {
     font-weight: $font-w-600;
     line-height: 120%;
     letter-spacing: 2px;
+  }
+}
+
+.account {
+  &__lists {
+    @include flex();
+    gap: 0.5rem;
   }
 }
 

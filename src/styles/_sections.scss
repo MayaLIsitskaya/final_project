@@ -56,11 +56,8 @@
   }
 
   &__dish {
-    @include container();
     @include flex();
-
     justify-content: space-between;
-    gap: 2rem;
 
     &_item {
       @include transition();
@@ -252,6 +249,7 @@
   &-4,
   &-5 {
     @include container();
+
     .container {
       margin: $m-0-5 $m-1-5;
     }
@@ -334,7 +332,7 @@
   &__discount {
     position: relative;
 
-    width: 1214px;
+    width: 1240px;
     height: 260px;
     border-radius: 30px;
     background-color: $primary-color;
@@ -978,9 +976,20 @@
       align-items: baseline;
       gap: 0.5rem;
 
+      .search {
+        &-form {
+          position: relative;
+          margin-top: $m-4;
+
+          width: 47rem;
+          height: 4.4rem;
+          border-radius: 15px;
+          background-color: $background-footer-color;
+        }
+      }
+
       .input-coupon {
         background: url("../../img/icons/coupon.svg") no-repeat 2rem 27px;
-        background-color: transparent;
 
         color: $primary-color;
         font-family: $font-f-poppins;
@@ -1043,13 +1052,13 @@
   &-button {
     &__left {
       position: relative;
-      top: 49rem;
+      top: 47.5rem;
       left: 7rem;
     }
 
     &__right{
       position: relative;
-      top: 49rem;
+      top: 47.5rem;
       left: 54rem;
     }
   }
@@ -1346,7 +1355,7 @@
       width: 130.445px;
       height: 45.063px;
 
-      background: $background-color;
+      background: #F5F5F5;
       border-radius: 9.487px;
       text-align: center;
 

@@ -1,0 +1,1010 @@
+@media screen and (max-width: 1920px) {
+  .subsection {
+    &-7 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .subsection {
+    &-7 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .subsection {
+    &-7 {
+      display: none;
+    }
+  }
+
+  .section {
+    &-4 {
+      .section {
+        &__cards {
+          gap: 1rem;
+
+          &_item {
+            width: 370px;
+
+            .img {
+              &-card {
+                width: 370px;
+              }
+            }
+
+            .card {
+              &-info {
+                &--icon {
+                  left: 19rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .btn {
+        &__view {
+          display: block;
+          padding-left: 64rem;
+        }
+      }
+    }
+
+    &-5 {
+      .section {
+        &__dish {
+          &_item {
+            width: 13rem;
+
+            .like {
+              padding-left: 10rem;
+            }
+
+            .dish {
+              margin-left: 0.5rem;
+            }
+
+            .img {
+              width: 180px;
+              height: 180px;
+            }
+          }
+
+          .btn {
+            &__add {
+              width: 36px;
+              height: 38px;
+              font-size: 20px;
+              padding-top: 0.5rem;
+              margin-left: 4rem;
+            }
+          }
+        }
+      }
+    }
+
+    &-6 {
+      max-width: 1000px;
+
+      .subsection {
+        &__block {
+          padding: 2.5rem 1.4rem;
+          width: 500px;
+        }
+
+        &__card {
+          width: 450px;
+          padding: 1rem;
+        }
+      }
+    }
+
+    &-7 {
+      max-width: 1000px;
+
+      .swiper {
+        .title {
+          &-subsection {
+            font-size: 18px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    &-8 {
+      max-width: 1000px;
+
+      .section {
+        &__discount {
+          width: 1000px;
+        }
+      }
+
+      .input {
+        &-img {
+          left: 42rem;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1010px) {
+  .section {
+
+    &-5 {
+      .section {
+        &__dish {
+          flex-wrap: wrap;
+          gap: 1rem;
+
+          &_item {
+            width: 13rem;
+
+            .like {
+              padding-left: 10rem;
+            }
+
+            .dish {
+              margin-left: 0.5rem;
+            }
+
+            .img {
+              width: 180px;
+              height: 180px;
+            }
+          }
+
+          .btn {
+            &__add {
+              width: 36px;
+              height: 38px;
+              font-size: 20px;
+              padding-top: 0.5rem;
+              margin-left: 4rem;
+            }
+          }
+        }
+      }
+    }
+
+
+    &-6 {
+      max-width: 100%;
+
+      .section {
+        &__block {
+          width: 90%;
+          margin: 0 auto;
+
+          &_description {
+            width: 49%;
+          }
+        }
+
+        &__card {
+          width: 440px;
+          padding: 1rem;
+        }
+      }
+
+      .subsection {
+        &__block {
+          width: 460px;
+          padding: 2rem 1rem;
+        }
+
+        &__card {
+          margin-top: 3rem;
+          width: 410px;
+        }
+
+        &__lists {
+          gap: 0.5rem;
+
+          .title {
+            &-subsection {
+              font-size: 16px;
+            }
+          }
+
+          &_price {
+            font-size: 20px;
+          }
+
+          &_scale {
+            width: 360px ;
+          }
+        }
+
+        &-info {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .subsection {
+      &-7 {
+        display: none;
+      }
+    }
+
+    &-7 {
+      max-width: 100%;
+
+      .swiper {
+        width: 90%;
+
+        .title {
+          &-subsection {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+
+        .subsection {
+          &-description {
+            font-size: 14px;
+          }
+
+          &-quote {
+            width: 100px;
+            height: 100px;
+          }
+
+          &-image {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+
+    &-8 {
+      max-width: 100%;
+
+      .section {
+        &__discount {
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        .title {
+          &-discount {
+            font-size: 42px;
+          }
+        }
+      }
+
+      .input {
+        &__group {
+          width: 50%;
+
+          .btn {
+            &__subscribe {
+              width: 10%;
+              margin-left: 19%;
+            }
+          }
+        }
+
+        &-img {
+          top: -9rem;
+          left: 67%;
+          width: 240px;
+          height: 240px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 958px) {
+  .section {
+    &-6 {
+      max-width: 100%;
+
+      .section {
+        &__block {
+          width: 90%;
+          margin: 0 auto;
+
+          &_description {
+            width: 49%;
+          }
+        }
+
+        &__card {
+          width: 440px;
+          padding: 1rem;
+        }
+      }
+
+      .subsection {
+        &__block {
+          width: 420px;
+          padding: 2rem 1rem;
+        }
+
+        &__card {
+          margin-top: 3rem;
+          width: 385px;
+        }
+
+        &__lists {
+          gap: 0.5rem;
+
+          .title {
+            &-subsection {
+              font-size: 16px;
+            }
+          }
+
+          &_price {
+            font-size: 20px;
+          }
+
+          &_scale {
+            width: 360px ;
+          }
+        }
+
+        &-info {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &-7 {
+      .swiper {
+
+        .title {
+          &-subsection {
+            font-size: 14px;
+            font-weight: 500;
+          }
+        }
+        .subsection {
+          &__card {
+            width: 375px;
+            height: auto;
+          }
+
+          &-image {
+            width: 60px;
+            height: 60px;
+          }
+
+          &-info {
+            font-size: 11px;
+            font-weight: 500;
+          }
+
+          &-description {
+            margin-top: 0;
+            font-size: 12px;
+            font-weight: 400;
+          }
+
+          &-scale {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+
+    &-8 {
+      .input {
+        &__group {
+          width: 50%;
+
+          .btn {
+            &__subscribe {
+              width: 10%;
+              margin-left: 12%;
+            }
+          }
+        }
+
+        &-img {
+          top: -8rem;
+          left: 67%;
+          width: 220px;
+          height: 220px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .section {
+
+    &-6 {
+      max-width: 100%;
+
+      .section {
+        &__block {
+          width: 90%;
+          margin: 0 auto;
+
+          &_description {
+            width: 49%;
+          }
+        }
+
+        &__card {
+          width: 440px;
+          padding: 1rem;
+        }
+      }
+
+      .subsection {
+        &__block {
+          width: 378px;
+          padding: 2rem 1rem;
+        }
+
+        &__card {
+          margin-top: 3rem;
+          width: 342px;
+        }
+
+        &__lists {
+          gap: 0.5rem;
+
+          .title {
+            &-subsection {
+              font-size: 16px;
+            }
+          }
+
+          &_price {
+            font-size: 16px;
+          }
+
+          &_scale {
+            width: 310px ;
+          }
+        }
+
+        &-info {
+          font-size: 7px;
+        }
+      }
+    }
+
+    &-7 {
+      .swiper {
+        .title {
+          &-subsection {
+            font-size: 12px;
+            font-weight: 500;
+          }
+        }
+
+        .subsection {
+          &__card {
+            width: 375px;
+            height: auto;
+          }
+
+          &-image {
+            width: 60px;
+            height: 60px;
+          }
+
+          &-info {
+            font-size: 11px;
+            font-weight: 500;
+          }
+
+          &-description {
+            margin-top: 0;
+            font-size: 11px;
+            font-weight: 400;
+          }
+
+          &-scale {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+
+    &-8 {
+      .input {
+        &__group {
+          width: 50%;
+
+          .btn {
+            &__subscribe {
+              width: 10%;
+              margin-left: 5%;
+            }
+          }
+        }
+
+        &-img {
+          top: -8rem;
+          left: 67%;
+          width: 220px;
+          height: 220px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 811px) {
+  .section {
+
+    &-6 {
+      max-width: 100%;
+      .title {
+        &-2 {
+          text-align: center;
+        }
+      }
+      .dashboard {
+        &-2,
+        &-3,
+        &-4 {
+          width: 355px;
+        }
+      }
+      .section {
+        &__block {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+
+          width: 90%;
+          margin: 0 auto;
+
+          &_description {
+            width: 49%;
+          }
+        }
+
+        &__card {
+          width: 440px;
+          padding: 1rem;
+        }
+      }
+
+      .subsection {
+        &__block {
+          width: 355px;
+          padding: 2rem 1rem;
+        }
+
+        &__card {
+          margin-top: 3rem;
+          width: 325px;
+        }
+
+        &__lists {
+          gap: 0.5rem;
+
+          .title {
+            &-subsection {
+              font-size: 14px;
+            }
+          }
+
+          &_price {
+            font-size: 15px;
+          }
+
+          &_scale {
+            width: 300px ;
+          }
+        }
+
+        &-info {
+          font-size: 6px;
+        }
+      }
+    }
+
+    &-7 {
+      .swiper {
+        .title {
+          &-subsection {
+            font-size: 10px;
+            font-weight: 500;
+          }
+        }
+
+        .subsection {
+          &__card {
+            width: 365px;
+            height: auto;
+            padding: 1rem;
+          }
+
+          &-image {
+            width: 50px;
+            height: 50px;
+          }
+
+          &-info {
+            font-size: 10px;
+            font-weight: 500;
+          }
+
+          &-description {
+            margin-top: 0;
+            font-size: 9px;
+            font-weight: 400;
+          }
+
+          &-scale {
+            margin-top: 0.5rem;
+            height: 13px;
+          }
+
+          &-quote {
+            width: 95px;
+            height: 95px;
+          }
+        }
+      }
+    }
+
+    &-8 {
+      .title {
+        &-discount {
+          text-align: center;
+          padding-left: 0;
+        }
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0;
+
+        &__group {
+          width: 350px;
+
+          .btn {
+            &__subscribe {
+              font-size: 10px;
+              width: 10%;
+              margin-left: 10%;
+              border-radius: 7.3px;
+            }
+          }
+        }
+
+        &-img {
+          display: block;
+          top: 0;
+          left: 38%;
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .subsection {
+    &-7 {
+      display: block;
+      max-width: 100%;
+
+      .swiper {
+        width: 90%;
+
+        .subsection {
+          &__card {
+            width: 95%;
+          }
+
+          &-quote {
+            padding-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+
+    &-6 {
+      max-width: 100%;
+      .title {
+        &-2 {
+          text-align: center;
+          font-size: 40px;
+          margin-bottom: 2rem;
+        }
+      }
+      .dashboard {
+        &-2,
+        &-3,
+        &-4 {
+          width: 330px;
+        }
+
+        &-img {
+          width: 64px;
+          height: 71px;
+        }
+
+        &-title {
+          top: -75px;
+          font-size: 12px;
+        }
+      }
+
+      .section {
+        &__block {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+
+          width: 95%;
+          margin: 0 auto;
+
+          &_description {
+            width: 49%;
+            display: contents;
+          }
+        }
+
+        &__card {
+          width: 440px;
+          padding: 1rem;
+        }
+      }
+
+      .subsection {
+        &__block {
+          width: 330px;
+          padding: 2rem 1rem;
+        }
+
+        &__card {
+          margin-top: 3rem;
+          width: 295px;
+        }
+
+        &__lists {
+          gap: 0.5rem;
+
+          .title {
+            &-subsection {
+              font-size: 10px;
+            }
+          }
+
+          &_price {
+            margin-right: -0.5rem;
+            font-size: 10px;
+          }
+
+          &_scale {
+            width: 260px ;
+          }
+
+          .icon {
+            width: 41px;
+            height: 41px;
+          }
+        }
+
+        &-info {
+          font-size: 6px;
+        }
+      }
+    }
+
+    &-7 {
+      display: none;
+    }
+
+    &-8 {
+      .input {
+        padding-left: 0;
+
+        &__group {
+          width: 350px;
+
+          .btn {
+            &__subscribe {
+              font-size: 10px;
+              width: 10%;
+              margin-left: 10%;
+              border-radius: 7.3px;
+            }
+          }
+        }
+
+        &-img {
+          display: block;
+          top: 0;
+          left: 31%;
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .section {
+
+    &-6 {
+      max-width: 100%;
+      .title {
+        &-2 {
+          text-align: center;
+          font-size: 40px;
+          margin-bottom: 2rem;
+        }
+      }
+      .dashboard {
+        &-2,
+        &-3,
+        &-4 {
+          width: 330px;
+        }
+
+        &-img {
+          width: 64px;
+          height: 71px;
+        }
+
+        &-title {
+          top: -75px;
+          font-size: 12px;
+        }
+      }
+
+      .section {
+        &__block {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          gap: 2rem;
+
+          width: 95%;
+          margin: 0 auto;
+
+          &_description {
+            width: 49%;
+            display: contents;
+          }
+        }
+
+        &__card {
+          width: 440px;
+          padding: 1rem;
+        }
+      }
+
+      .subsection {
+        &__block {
+          width: 330px;
+          padding: 2rem 1rem;
+        }
+
+        &__card {
+          margin-top: 3rem;
+          width: 295px;
+        }
+
+        &__lists {
+          gap: 0.5rem;
+
+          .title {
+            &-subsection {
+              font-size: 10px;
+            }
+          }
+
+          &_price {
+            margin-right: -0.5rem;
+            font-size: 10px;
+          }
+
+          &_scale {
+            width: 260px ;
+          }
+
+          .icon {
+            width: 41px;
+            height: 41px;
+          }
+        }
+
+        &-info {
+          font-size: 6px;
+        }
+      }
+    }
+
+
+    .subsection {
+      &-7 {
+        display: block;
+        max-width: 100%;
+
+        .swiper {
+          width: 90%;
+
+          .subsection {
+            &__card {
+              width: 95%;
+            }
+
+            &-quote {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &-8 {
+      .input {
+        padding-left: 0;
+
+        &__group {
+          width: 260px;
+          height: 48px;
+          padding-top: 0.7rem;
+          border-radius: 9px;
+
+          .btn {
+            &__subscribe {
+              display: block;
+              position: relative;
+              font-size: 10px;
+              width: 86px;
+              height: 34px;
+              padding: 0.3rem 0.3rem;
+              border-radius: 7.3px;
+              top: -24px;
+              left: 7rem;
+            }
+          }
+        }
+
+        &-text {
+          font-size: 10px;
+        }
+
+        &-img {
+          display: block;
+          top: 0;
+          left: 26%;
+          width: 170px;
+          height: 171px;
+        }
+      }
+    }
+  }
+}
+
