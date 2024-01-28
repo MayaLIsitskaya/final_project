@@ -884,6 +884,11 @@ body {
   display: none;
 }
 
+@media screen and (max-width: 1920px) {
+  .mobile__menu {
+    display: none;
+  }
+}
 @media screen and (max-width: 1260px) {
   .header {
     max-width: 1000px;
@@ -2431,7 +2436,30 @@ body {
   .subsection-7 {
     display: none;
   }
+  .section-1 {
+    width: 90%;
+  }
+  .section-1 .dashboard-1 {
+    left: 35%;
+    width: 320px;
+  }
+  .section-1 .dashboard-illustartion {
+    left: 18rem;
+    width: 40px;
+  }
+  .section-1 .around {
+    left: 10%;
+  }
+  .section-1 .chart {
+    left: 5%;
+  }
+  .section-3 {
+    width: 90%;
+  }
   .section-4 .section__cards {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 1rem;
   }
   .section-4 .section__cards_item {
@@ -2444,8 +2472,8 @@ body {
     left: 19rem;
   }
   .section-4 .btn__view {
-    display: block;
-    padding-left: 64rem;
+    display: flex;
+    justify-content: center;
   }
   .section-5 .section__dish_item {
     width: 13rem;
@@ -2460,12 +2488,9 @@ body {
     width: 180px;
     height: 180px;
   }
-  .section-5 .section__dish .btn__add {
-    width: 36px;
-    height: 38px;
-    font-size: 20px;
-    padding-top: 0.5rem;
-    margin-left: 4rem;
+  .section-5 .btn__view {
+    display: flex;
+    justify-content: center;
   }
   .section-6 {
     max-width: 1000px;
@@ -2494,10 +2519,56 @@ body {
   .section-8 .input-img {
     left: 42rem;
   }
+  .section-questions {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 1010px) {
+  .section-1 {
+    width: 90%;
+  }
+  .section-1 .title {
+    font-size: 66px;
+  }
+  .section-1 .title-description {
+    font-size: 16px;
+  }
+  .section-1 .dashboard-1 {
+    left: 25%;
+    width: 300px;
+  }
+  .section-1 .dashboard-text {
+    left: 240px;
+  }
+  .section-1 .dashboard-illustartion {
+    left: 18rem;
+    width: 30px;
+  }
+  .section-1 .around {
+    left: 5%;
+  }
+  .section-1 .chart {
+    left: 3%;
+    width: 149px;
+    height: 138px;
+  }
+  .section-3 .img {
+    width: 350px;
+    height: 500px;
+  }
+  .section-3 .title-2 {
+    font-size: 45px;
+  }
+  .section-3 .marked__list {
+    font-size: 16px;
+  }
+  .section-3 .btn__submit {
+    font-size: 14px;
+  }
   .section-5 .section__dish {
     flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
     gap: 1rem;
   }
   .section-5 .section__dish_item {
@@ -2680,8 +2751,60 @@ body {
     width: 220px;
     height: 220px;
   }
+  .section-questions .accordion-label {
+    font-size: 20px;
+  }
+  .section-questions .accordion-content {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 864px) {
+  .section-1 {
+    width: 90%;
+  }
+  .section-1 .title {
+    font-size: 45px;
+  }
+  .section-1 .title-description {
+    font-size: 12px;
+    margin-bottom: 2rem;
+  }
+  .section-1 .dashboard-1 {
+    left: 25%;
+    width: 250px;
+  }
+  .section-1 .dashboard-text {
+    left: 200px;
+  }
+  .section-1 .dashboard-illustartion {
+    left: 18rem;
+    width: 30px;
+  }
+  .section-1 .around {
+    left: 5%;
+    width: 322px;
+    height: 324px;
+  }
+  .section-1 .around-img {
+    width: 336px;
+    height: 339px;
+  }
+  .section-1 .around .arrow {
+    left: 295px;
+    width: 80px;
+    height: 70px;
+  }
+  .section-1 .chart {
+    top: 13rem;
+    left: -3%;
+  }
+  .section-1 .chart img {
+    width: 130px;
+    height: 128px;
+  }
+  .section-1 .chart-illustration {
+    display: none;
+  }
   .section-6 {
     max-width: 100%;
   }
@@ -2758,11 +2881,98 @@ body {
   }
 }
 @media screen and (max-width: 811px) {
+  .section-1 {
+    width: 90%;
+  }
+  .section-1 .section__block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 17rem;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+  .section-1 .title {
+    font-size: 45px;
+  }
+  .section-1 .title-description {
+    font-size: 12px;
+    margin-bottom: 2rem;
+  }
+  .section-1 .dashboard-1 {
+    left: 25%;
+    width: 250px;
+  }
+  .section-1 .dashboard-text {
+    left: 200px;
+  }
+  .section-1 .dashboard-illustartion {
+    left: 17rem;
+    width: 30px;
+  }
+  .section-1 .around {
+    left: 5%;
+    width: 322px;
+    height: 324px;
+  }
+  .section-1 .around-img {
+    width: 336px;
+    height: 339px;
+  }
+  .section-1 .around .arrow {
+    left: 295px;
+    width: 80px;
+    height: 70px;
+  }
+  .section-1 .chart {
+    top: 13rem;
+    left: -3%;
+  }
+  .section-1 .chart img {
+    width: 130px;
+    height: 128px;
+  }
+  .section-1 .chart-illustration {
+    display: none;
+  }
+  .section-1 .account__lists .btn__submit {
+    font-size: 12px;
+  }
+  .section-1 .account__lists .btn__switch {
+    font-size: 12px;
+  }
+  .section-3 .img {
+    width: 250px;
+    height: 400px;
+  }
+  .section-3 .title-2 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+  .section-3 .marked__list {
+    font-size: 14px;
+  }
+  .section-3 .btn__submit {
+    font-size: 14px;
+  }
+  .section-3 .img-arrow-right {
+    top: 0.6rem;
+  }
+  .section-3 .img-vector {
+    display: block;
+    width: 150px;
+    height: 60px;
+    position: relative;
+    left: 9rem;
+    top: 0;
+  }
   .section-6 {
     max-width: 100%;
   }
   .section-6 .title-2 {
     text-align: center;
+    font-size: 32px;
   }
   .section-6 .dashboard-2, .section-6 .dashboard-3, .section-6 .dashboard-4 {
     width: 355px;
@@ -2864,6 +3074,12 @@ body {
     width: 200px;
     height: 200px;
   }
+  .section-questions .accordion-label {
+    font-size: 18px;
+  }
+  .section-questions .accordion-content {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 558px) {
   .subsection-7 {
@@ -2878,6 +3094,105 @@ body {
   }
   .subsection-7 .swiper .subsection-quote {
     padding-left: 0.5rem;
+  }
+  .section-1 {
+    width: 90%;
+  }
+  .section-1 .section__block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 17rem;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  }
+  .section-1 .title {
+    font-size: 45px;
+  }
+  .section-1 .title-description {
+    font-size: 12px;
+    margin-bottom: 2rem;
+  }
+  .section-1 .dashboard-1 {
+    left: 25%;
+    width: 250px;
+  }
+  .section-1 .dashboard-text {
+    left: 200px;
+  }
+  .section-1 .dashboard-illustartion {
+    left: 17rem;
+    width: 30px;
+  }
+  .section-1 .around {
+    left: -8%;
+    width: 322px;
+    height: 324px;
+  }
+  .section-1 .around-img {
+    width: 336px;
+    height: 339px;
+  }
+  .section-1 .around .arrow {
+    left: 282px;
+    width: 75px;
+    height: 55px;
+  }
+  .section-1 .chart {
+    top: 13rem;
+    left: -20%;
+  }
+  .section-1 .chart img {
+    width: 130px;
+    height: 128px;
+  }
+  .section-1 .chart-illustration {
+    display: none;
+  }
+  .section-1 .account__lists {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+  .section-1 .account__lists .btn__submit {
+    font-size: 10px;
+  }
+  .section-1 .account__lists .btn__switch {
+    margin-left: 0;
+    font-size: 10px;
+  }
+  .section-3 .section__block {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .section-3 .title-2 {
+    text-align: center;
+  }
+  .section-3 .img-vector {
+    width: 100px;
+    height: 40px;
+  }
+  .section-3 .img-arrow-right {
+    width: 30px;
+    height: 30px;
+  }
+  .section-3 .btn {
+    display: block;
+    width: 150px;
+    height: 50px;
+    padding: 0;
+  }
+  .section-3 .btn__submit {
+    font-size: 12px;
+  }
+  .section-4 .title-3, .section-5 .title-3 {
+    text-align: center;
+    font-size: 32px;
   }
   .section-6 {
     max-width: 100%;
@@ -2964,6 +3279,12 @@ body {
     left: 31%;
     width: 200px;
     height: 200px;
+  }
+  .section-questions .accordion-label {
+    font-size: 14px;
+  }
+  .section-questions .accordion-content {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -3073,6 +3394,12 @@ body {
     left: 26%;
     width: 170px;
     height: 171px;
+  }
+  .section-questions .accordion-label {
+    font-size: 10px;
+  }
+  .section-questions .accordion-content {
+    font-size: 8px;
   }
 }
 

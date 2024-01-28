@@ -20,11 +20,41 @@
       display: none;
     }
   }
-
   .section {
+    &-1 {
+      width: 90%;
+
+      .dashboard {
+        &-1 {
+          left: 35%;
+          width: 320px;
+        }
+
+        &-illustartion {
+          left: 18rem;
+          width: 40px;
+        }
+      }
+
+      .around {
+        left: 10%;
+      }
+
+      .chart {
+        left:5%;
+      }
+    }
+
+    &-3 {
+      width: 90%;
+    }
+
     &-4 {
       .section {
         &__cards {
+          justify-content: space-around;
+          flex-wrap: wrap;
+          flex-direction: row;
           gap: 1rem;
 
           &_item {
@@ -46,11 +76,10 @@
           }
         }
       }
-
       .btn {
         &__view {
-          display: block;
-          padding-left: 64rem;
+          display: flex;
+          justify-content: center;
         }
       }
     }
@@ -74,16 +103,13 @@
               height: 180px;
             }
           }
+        }
+      }
 
-          .btn {
-            &__add {
-              width: 36px;
-              height: 38px;
-              font-size: 20px;
-              padding-top: 0.5rem;
-              margin-left: 4rem;
-            }
-          }
+      .btn {
+        &__view {
+          display: flex;
+          justify-content: center;
         }
       }
     }
@@ -132,17 +158,86 @@
         }
       }
     }
+
+    &-questions {
+      width: 90%;
+    }
   }
 }
 
 
 @media screen and (max-width: 1010px) {
   .section {
+    &-1 {
+      width: 90%;
+
+
+      .title {
+        font-size: 66px;
+
+        &-description {
+          font-size: $font-16;
+        }
+      }
+
+      .dashboard {
+        &-1 {
+          left: 25%;
+          width: 300px;
+        }
+
+        &-text {
+          left: 240px;
+        }
+
+        &-illustartion {
+          left: 18rem;
+          width: 30px;
+        }
+      }
+
+      .around {
+        left: 5%;
+      }
+
+      .chart {
+        left: 3%;
+        width: 149px;
+        height: 138px; ;
+      }
+    }
+
+    &-3 {
+      .img {
+        width: 350px;
+        height: 500px;
+      }
+
+      .title {
+        &-2 {
+          font-size: $font-45;
+        }
+      }
+
+      .marked {
+        &__list {
+          font-size: $font-16;
+        }
+      }
+      .btn {
+        &__submit {
+          font-size: $font-14;
+        }
+      }
+    }
+
 
     &-5 {
       .section {
         &__dish {
           flex-wrap: wrap;
+          justify-content: center;
+          flex-direction: row;
           gap: 1rem;
 
           &_item {
@@ -421,11 +516,83 @@
         }
       }
     }
+
+    &-questions {
+      .accordion {
+        &-label {
+          font-size: $font-20;
+        }
+
+        &-content {
+          font-size: $font-20;
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 864px) {
   .section {
+    &-1 {
+      width: 90%;
+
+      .title {
+        font-size: 45px;
+
+        &-description {
+          font-size: $font-12;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .dashboard {
+        &-1 {
+          left: 25%;
+          width: 250px;
+        }
+
+        &-text {
+          left: 200px;
+        }
+
+        &-illustartion {
+          left: 18rem;
+          width: 30px;
+        }
+      }
+
+      .around {
+        left: 5%;
+        width: 322px;
+        height: 324px;
+
+        &-img {
+          width: 336px;
+          height: 339px;
+        }
+
+        .arrow {
+          left: 295px;
+          width: 80px;
+          height: 70px;
+        }
+      }
+
+      .chart {
+        top: 13rem;
+        left: -3%;
+
+        img {
+          width: 130px;
+          height: 128px;
+        }
+
+        &-illustration {
+          display: none;
+        }
+      }
+    }
+
 
     &-6 {
       max-width: 100%;
@@ -545,14 +712,142 @@
 
 @media screen and (max-width: 811px) {
   .section {
+    &-1 {
+      width: 90%;
+      .section {
+        &__block {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          margin-bottom: 17rem;
+          align-items: center;
+          justify-content: center;
+          gap: 6rem;
+        }
+      }
+
+      .title {
+        font-size: 45px;
+
+        &-description {
+          font-size: $font-12;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .dashboard {
+        &-1 {
+          left: 25%;
+          width: 250px;
+        }
+
+        &-text {
+          left: 200px;
+        }
+
+        &-illustartion {
+          left: 17rem;
+          width: 30px;
+        }
+      }
+
+      .around {
+        left: 5%;
+        width: 322px;
+        height: 324px;
+
+        &-img {
+          width: 336px;
+          height: 339px;
+        }
+
+        .arrow {
+          left: 295px;
+          width: 80px;
+          height: 70px;
+        }
+      }
+
+      .chart {
+        top: 13rem;
+        left: -3%;
+
+        img {
+          width: 130px;
+          height: 128px;
+        }
+
+        &-illustration {
+          display: none;
+        }
+      }
+
+      .account {
+        &__lists {
+          .btn {
+            &__submit {
+              font-size: 12px;
+            }
+
+            &__switch {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    &-3 {
+      .img {
+        width: 250px;
+        height: 400px;
+      }
+
+      .title {
+        &-2 {
+          font-size: $font-32;
+          margin-bottom: $m-2;
+        }
+      }
+
+      .marked {
+        &__list {
+          font-size: $font-14;
+        }
+      }
+      .btn {
+        &__submit {
+          font-size: $font-14;
+        }
+      }
+
+      .img {
+        &-arrow {
+          &-right {
+            top: 0.6rem;
+          }
+        }
+
+        &-vector {
+          display: block;
+          width: 150px;
+          height: 60px;
+          position: relative;
+          left: 9rem;
+          top: 0;
+        }
+      }
+    }
 
     &-6 {
       max-width: 100%;
       .title {
         &-2 {
           text-align: center;
+          font-size: $font-32;
         }
       }
+
       .dashboard {
         &-2,
         &-3,
@@ -560,6 +855,7 @@
           width: 355px;
         }
       }
+
       .section {
         &__block {
           display: flex;
@@ -699,6 +995,18 @@
         }
       }
     }
+
+    &-questions {
+      .accordion {
+        &-label {
+          font-size: $font-18;
+        }
+
+        &-content {
+          font-size: $font-18;
+        }
+      }
+    }
   }
 }
 
@@ -725,6 +1033,147 @@
   }
 
   .section {
+    &-1 {
+      width: 90%;
+      .section {
+        &__block {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          margin-bottom: 17rem;
+          align-items: center;
+          justify-content: center;
+          gap: 6rem;
+        }
+      }
+
+      .title {
+        font-size: 45px;
+
+        &-description {
+          font-size: $font-12;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .dashboard {
+        &-1 {
+          left: 25%;
+          width: 250px;
+        }
+
+        &-text {
+          left: 200px;
+        }
+
+        &-illustartion {
+          left: 17rem;
+          width: 30px;
+        }
+      }
+
+      .around {
+        left: -8%;
+        width: 322px;
+        height: 324px;
+
+        &-img {
+          width: 336px;
+          height: 339px;
+        }
+
+        .arrow {
+          left: 282px;
+          width: 75px;
+          height: 55px;
+        }
+      }
+
+      .chart {
+        top: 13rem;
+        left: -20%;
+
+        img {
+          width: 130px;
+          height: 128px;
+        }
+
+        &-illustration {
+          display: none;
+        }
+      }
+
+      .account {
+        &__lists {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          align-items: flex-start;
+
+          .btn {
+            &__submit {
+              font-size: 10px;
+            }
+
+            &__switch {
+              margin-left: 0;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    &-3 {
+      .section {
+        &__block {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+        }
+      }
+
+      .title-2 {
+        text-align: center;
+      }
+
+      .img {
+        &-vector {
+          width: 100px;
+          height: 40px;
+        }
+
+        &-arrow {
+          &-right {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+
+      .btn {
+        display: block;
+        width: 150px;
+        height: 50px;
+        padding: 0;
+        &__submit {
+          font-size: $font-12;
+        }
+      }
+
+    }
+
+    &-4,
+    &-5 {
+      .title {
+        &-3 {
+          text-align: center;
+          font-size: $font-32;
+        }
+      }
+    }
 
     &-6 {
       max-width: 100%;
@@ -844,6 +1293,19 @@
           left: 31%;
           width: 200px;
           height: 200px;
+        }
+      }
+    }
+
+
+    &-questions {
+      .accordion {
+        &-label {
+          font-size: $font-14;
+        }
+
+        &-content {
+          font-size: $font-12;
         }
       }
     }
@@ -1005,6 +1467,20 @@
         }
       }
     }
+
+    &-questions {
+      .accordion {
+        &-label {
+          font-size: $font-10;
+        }
+
+        &-content {
+          font-size: $font-8;
+        }
+      }
+    }
   }
 }
+
+
 
