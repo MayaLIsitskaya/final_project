@@ -864,14 +864,16 @@
       }
 
       .btn__submit {
-        width: 131.204px;
-        height: 41.985px;
-        font-size: $font-14;
-        padding-top: 0.5rem;
+        display: block;
+        width: 131px;
+        height: 42px;
 
         position: absolute;
         top: 6.5rem;
         left: 17.5rem;
+
+        font-size: $font-14;
+        padding-top: 0.8rem;
       }
     }
   }
@@ -982,14 +984,14 @@
           margin-top: $m-4;
 
           width: 47rem;
-          height: 4.4rem;
           border-radius: 15px;
           background-color: $background-footer-color;
+        }
         }
       }
 
       .input-coupon {
-        background: url("../../img/icons/coupon.svg") no-repeat 2rem 27px;
+        background: url("../../img/icons/coupon.svg") no-repeat 2rem 25px;
 
         color: $primary-color;
         font-family: $font-f-poppins;
@@ -1001,11 +1003,16 @@
 
         border: none;
         outline: none;
-        padding: $p-1-5 $p-4;
+        padding: 1.35rem $p-4;
 
         &::-webkit-search-cancel-button {
           appearance: none;
         }
+      }
+
+    .btn {
+      &__submit {
+        padding: 1.4rem $p-2;
       }
     }
   }

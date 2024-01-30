@@ -1,87 +1,69 @@
 .btn {
-  width: 121.4px;
-  height: 62.5px;
-  border-radius: 17.8px;
-  background-color: $primary-color;
-
-  padding: $p-1 $p-1-5;
-
-  text-align: center;
-  color: $background-color;
-  font-size: $font-18;
-  font-family: $font-f-inter;
-  font-weight: $font-w-700;
-  line-height: 26.74px;
+  @include btn();
+  @include transition();
 
   cursor: pointer;
 
   &__login {
-    @include transition();
-    border-radius: 12.4px;
+    font-size: $font-18;
+    font-family: $font-f-inter;
+    font-weight: $font-w-700;
+
     color: $color-grey-navbar;
     background-color: $background-color;
 
     &:hover {
-      @include btn-purple();
+      @include opacity();
     }
   }
 
   &__submit {
-    @include transition();
-    border-radius: 12.4px;
-
-    font-size: $font-16;
-    font-family: $font-f-poppins;
-    font-weight: $font-w-500;
-    letter-spacing: 0.163px;
+    letter-spacing: 0.1px;
 
     &:hover {
-      @include btn-white();
+      @include btn-hover-bgr-white();
     }
   }
 
   &__switch {
-    @include transition();
-    border-radius: 12.4px;
-    border: 1px solid $primary-color;
-    background-color: $background-color;
+    @include btn-hover-bgr-white();
 
-    color: $primary-color;
-    font-size: $font-16;
-    font-family: $font-f-poppins;
-    font-weight: $font-w-500;
     margin-left: $m-1;
-    transition: width 0.5s;
 
     &:hover {
-      @include btn-purple();
+      @include btn-hover-bgr-purple();
     }
 
     &-off {
-      padding-top: $p-1-5;
-      margin-left: 0;
       display: block;
       width: 377px;
       height: 75px;
+
+      padding-top: $p-1-5;
+      margin-left: 0;
+
       font-size: $font-20;
 
       border-radius: 15.138px 0px 0px 15.138px;
       border: 1px solid $primary-color;
-      background: #F3F5F6;
+      background: $background-color;
 
       box-shadow: 0px 21.785px 48.411px 0px rgba(211, 209, 216, 0.25);
 
       &:hover {
-        @include btn-purple();
+        @include btn-hover-bgr-purple();
+
         border: 0.5px solid $background-color;
       }
     }
 
     &-on {
-      padding-top: $p-1-5;
+      display: block;
       width: 377px;
       height: 75px;
-      display: block;
+
+      padding-top: $p-1-5;
+
       font-size: $font-20;
 
       border-radius: 0px 15.138px 15.138px 0px;
@@ -89,47 +71,47 @@
       box-shadow: 0px 21.785px 48.411px 0px rgba(211, 209, 216, 0.25);
 
       &:hover {
-        @include btn-white();
+        @include btn-hover-bgr-white();
       }
     }
   }
 
   &__view {
     @include transition();
+
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+
     margin-top: $m-5;
 
     color: $color-dark-grey;
     font-family: $font-f-poppins;
     font-size: $font-20;
     font-weight: $font-w-500;
-    line-height: 225.921%;
+    line-height: 2.5;
     letter-spacing: -0.1px;
-
-    cursor: pointer;
 
     &:hover {
       transform: translateY(-10%);
-      @include opacity();
     }
   }
 
   &__add {
     @include transition();
+
     display: inline-block;
-    text-align: center;
-    padding-top: 0.5rem;
-    margin-left: 4rem;
     width: 40px;
     height: 43px;
-    border-radius: 8.9px;
+    border-radius: 9px;
+
+    padding-top: $p-0-5;
+    margin-left: $m-4;
+
+    text-align: center;
     font-size: $font-28;
     color: $color-white;
     background-color: $color-black;
-
-    cursor: pointer;
 
     &:hover {
       background: $color-white;
@@ -143,10 +125,13 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
     margin-top: -0.7rem;
+
     width: 10rem;
     height: 3.3rem;
-    border-radius: 12.6px;
+    border-radius: 10px;
+
     border: none;
     background-color: $color-bgr-button;
 
@@ -154,42 +139,36 @@
     font-family: $font-f-manrope;
     font-size: $font-18;
     font-weight: $font-w-600;
-    line-height: 150%;
-    letter-spacing: 0.628px;
-
-    cursor: pointer;
+    letter-spacing: 0.6px;
 
     &:hover {
-      background-color: $color-blue-grey;
       @include opacity();
+
+      background-color: $color-blue-grey;
     }
   }
 
   &__subscribe {
-    @include transition();
-    color: #F7F8FA;
-    background-color: $primary-color;
-    font-size: $font-14;
-    font-family: $font-f-poppins;
-    font-weight: $font-w-500;
-
-    letter-spacing: 0.443px;
     margin-left: $m-6;
 
+    font-size: $font-14;
+    letter-spacing: 0.4px;
+
     &:hover {
-      @include btn-white();
+      @include btn-hover-bgr-white();
     }
   }
 
   &-minus {
     width: 33px;
     height: 31px;
-    border-radius: 9.91px;
+    border-radius: 9px;
     background: $color-white;
     border: 1px solid $color-black;
-    color: $color-black;
 
+    color: $color-black;
     font-size: $font-18;
+
     cursor: pointer;
 
     &:hover {
@@ -201,11 +180,12 @@
   &-plus {
     width: 33px;
     height: 31px;
-    border-radius: 9.91px;
+    border-radius: 9px;
+    border: none;
+
     background: $color-black;
     color: $color-white;
     font-size: $font-18;
-    border: none;
 
     cursor: pointer;
 
@@ -217,41 +197,35 @@
   }
 
   &__apply {
-    @include transition();
     display: inline-block;
     width: 19rem;
     height: 3.75rem;
-    border-radius: 13.6px;
 
-    background-color: $primary-color;
     margin-top: $m-1-5;
+    padding-top: $p-1-5;
 
-    color: $background-color;
     font-size: $font-13;
-    font-family: $font-f-poppins;
-    font-weight: $font-w-600;
-    letter-spacing: -0.137px;
+    letter-spacing: -0.1px;
 
     &:hover {
-      @include btn-white();
+      @include btn-hover-bgr-white();
     }
   }
 
   &__review {
-    @include transition();
-    padding-top: $p-1-5;
     width: 681px;
     height: 77px;
 
+    padding-top: 1.7rem;
+
     border-radius: 15px;
-    color: #FFF3EB;
-    background-color: $primary-color;
+
     font-size: $font-20;
     font-weight: $font-w-600;
     letter-spacing: -0.2px;
 
     &:hover {
-      @include btn-white();
+      @include btn-hover-bgr-white();
     }
   }
 
@@ -259,41 +233,31 @@
     @include transition();
     width: 493px;
     height: 76px;
+    border-radius: 16px;
+    padding-top: 1.7rem;
 
-    border-radius: 15.876px;
-    background: $primary-color;
-
-    color: $background-color;
-    font-family: $font-f-poppins;
     font-size: $font-20;
     font-weight: $font-w-500;
-    letter-spacing: 0.624px;
-    padding: $p-1-5;
+    letter-spacing: 0.6px;
 
     &:hover {
-      @include btn-white();
+      @include btn-hover-bgr-white();
     }
   }
 
   &__singup {
     display: block;
-    padding-top: 1.3rem;
-    text-align: center;
-    width: 271.958px;
-    height: 52.969px;
-    border-radius: 11.068px;
-    background: #6C5FBC;
+    width: 272px;
+    height: 53px;
 
-    color: $background-color;
-    font-family: $font-f-poppins;
-    font-size: 12.649px;
-    font-weight: 600;
-    letter-spacing: 0.379px;
+    padding-top: $p-1-3;
 
-    cursor: pointer;
+    font-size: $font-12;
+    font-weight: $font-w-600;
+    letter-spacing: 0.3px;
 
     &:hover {
-      @include btn-white();
+      @include btn-hover-bgr-white();
     }
   }
 }
