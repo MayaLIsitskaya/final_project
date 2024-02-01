@@ -911,7 +911,7 @@ body {
   }
   .mobile__menu_close {
     margin-top: 2rem;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 500;
     cursor: pointer;
   }
@@ -922,23 +922,29 @@ body {
     align-items: center;
   }
   .mobile__menu .nav {
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
   .mobile__menu .nav .navbar__lists {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .mobile__menu .nav .navbar__link {
-    font-size: 48px;
+    font-size: 28px;
   }
   .mobile__menu .account {
     display: block;
     margin-top: 5rem;
+    padding-left: 2.5rem;
   }
   .mobile__menu .account__lists {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+  }
+  .mobile__menu .account__lists .btn {
+    padding: 1rem;
   }
 }
 .section {
@@ -1054,9 +1060,7 @@ body {
   top: 25rem;
 }
 .section-2 {
-  padding: 3rem 20rem;
   background-image: url("../../img/BG.png");
-  height: 13.7rem;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1065,13 +1069,13 @@ body {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  padding: 3rem 20rem;
 }
 .section-2 .row__items_title {
   margin-bottom: 0.5rem;
   font-family: "Public Sans", sans-serif;
-  font-size: 43px;
+  font-size: 40px;
   font-weight: 700;
-  line-height: 125%;
   color: #FFFFFF;
 }
 .section-2 .row__items_description {
@@ -1135,6 +1139,9 @@ body {
 }
 .section-4 .container, .section-5 .container {
   margin: 0.5rem 1.5rem;
+}
+.section-4 .section__cards .img-card, .section-5 .section__cards .img-card {
+  border-radius: 30px 30px 0 0;
 }
 .section-4 .card-info, .section-5 .card-info {
   display: flex;
@@ -2399,8 +2406,14 @@ body {
   .subsection-7 {
     display: none;
   }
-  .section-1 {
-    width: 90%;
+  .section-1 .section__block {
+    margin: 0 2rem;
+  }
+  .section-1 .section__block_description .title {
+    font-size: 65px;
+  }
+  .section-1 .section__block_description .title-description {
+    font-size: 16px;
   }
   .section-1 .dashboard-1 {
     left: 35%;
@@ -2416,8 +2429,14 @@ body {
   .section-1 .chart {
     left: 5%;
   }
+  .section-2 .row__items {
+    padding: 3rem 18rem;
+  }
   .section-3 {
     width: 90%;
+  }
+  .section-4 {
+    margin: 0 4rem;
   }
   .section-4 .section__cards {
     justify-content: space-around;
@@ -2426,17 +2445,26 @@ body {
     gap: 1rem;
   }
   .section-4 .section__cards_item {
-    width: 370px;
+    width: 350px;
   }
   .section-4 .section__cards_item .img-card {
-    width: 370px;
+    width: 350px;
+  }
+  .section-4 .section__cards_item .container {
+    margin: 0.5rem 1rem;
+  }
+  .section-4 .section__cards_item .card-info {
+    margin-left: 1.3rem;
   }
   .section-4 .section__cards_item .card-info--icon {
-    left: 19rem;
+    left: 18rem;
   }
   .section-4 .btn__view {
     display: flex;
     justify-content: center;
+  }
+  .section-5 {
+    margin: 0 4rem;
   }
   .section-5 .section__dish_item {
     width: 13rem;
@@ -2487,9 +2515,6 @@ body {
   }
 }
 @media screen and (max-width: 1010px) {
-  .section-1 {
-    width: 90%;
-  }
   .section-1 .title {
     font-size: 66px;
   }
@@ -2514,6 +2539,16 @@ body {
     left: 3%;
     width: 149px;
     height: 138px;
+  }
+  .section-2 .row__items {
+    gap: 1rem;
+    padding: 3rem 17rem;
+  }
+  .section-2 .row__items_title {
+    font-size: 35px;
+  }
+  .section-2 .row__items_description {
+    font-size: 14px;
   }
   .section-3 .img {
     width: 350px;
@@ -2640,6 +2675,25 @@ body {
   }
 }
 @media screen and (max-width: 958px) {
+  .section-1 .section__block {
+    margin: 0 3.5rem;
+  }
+  .section-1 .section__block_description .title {
+    font-size: 50px;
+  }
+  .section-1 .section__block_description .title-description {
+    font-size: 16px;
+  }
+  .section-2 .row__items {
+    gap: 1rem;
+    padding: 3rem 12rem;
+  }
+  .section-2 .row__items_title {
+    font-size: 32px;
+  }
+  .section-2 .row__items_description {
+    font-size: 13px;
+  }
   .section-6 {
     max-width: 100%;
   }
@@ -2722,15 +2776,18 @@ body {
   }
 }
 @media screen and (max-width: 864px) {
-  .section-1 {
-    width: 90%;
-  }
-  .section-1 .title {
-    font-size: 45px;
-  }
-  .section-1 .title-description {
+  .section-1 .section__block_description .logo-description {
     font-size: 12px;
+  }
+  .section-1 .section__block_description .title {
+    font-size: 44px;
+  }
+  .section-1 .section__block_description .title-description {
+    font-size: 11.7px;
     margin-bottom: 2rem;
+  }
+  .section-1 .section__block_description .btn {
+    font-size: 12px;
   }
   .section-1 .dashboard-1 {
     left: 25%;
@@ -2767,6 +2824,16 @@ body {
   }
   .section-1 .chart-illustration {
     display: none;
+  }
+  .section-2 .row__items {
+    padding: 3rem 7rem;
+    gap: 2rem;
+  }
+  .section-2 .row__items_title {
+    font-size: 28px;
+  }
+  .section-2 .row__items_description {
+    font-size: 12px;
   }
   .section-6 {
     max-width: 100%;
@@ -2844,35 +2911,68 @@ body {
   }
 }
 @media screen and (max-width: 811px) {
-  .section-1 {
-    width: 90%;
-  }
   .section-1 .section__block {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     margin-bottom: 17rem;
-    align-items: center;
-    justify-content: center;
     gap: 6rem;
   }
-  .section-1 .title {
-    font-size: 45px;
+  .section-1 .section__block_description {
+    width: 100%;
+    text-align: center;
   }
-  .section-1 .title-description {
-    font-size: 12px;
+  .section-1 .section__block_description .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-1 .section__block_description .logo-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+  }
+  .section-1 .section__block_description .title {
+    font-size: 42px;
+  }
+  .section-1 .section__block_description .title-description {
+    font-size: 14px;
     margin-bottom: 2rem;
+  }
+  .section-1 .section__block_description .account__lists {
+    display: flex;
+    justify-content: center;
+  }
+  .section-1 .section__block_description .account__lists .btn {
+    font-size: 12px;
+  }
+  .section-1 .section__block_description .account__lists .btn__switch {
+    margin-left: 0;
+  }
+  .section-1 .section__block .block__row {
+    justify-content: center;
+  }
+  .section-1 .section__block .block__row img {
+    height: 20px;
+  }
+  .section-1 .description-block {
+    left: 7.5rem;
   }
   .section-1 .dashboard-1 {
     left: 25%;
     width: 250px;
   }
-  .section-1 .dashboard-text {
-    left: 200px;
+  .section-1 .dashboard-1 .dashboard-img {
+    display: block;
   }
-  .section-1 .dashboard-illustartion {
-    left: 17rem;
-    width: 30px;
+  .section-1 .dashboard-1 .dashboard-title {
+    left: 30px;
+  }
+  .section-1 .dashboard-1 .dashboard-title__description {
+    left: 8px;
+  }
+  .section-1 .dashboard-1 .dashboard-text {
+    left: 90px;
   }
   .section-1 .around {
     left: 5%;
@@ -2903,6 +3003,15 @@ body {
     font-size: 12px;
   }
   .section-1 .account__lists .btn__switch {
+    font-size: 12px;
+  }
+  .section-2 .row__items {
+    padding: 2rem 12rem;
+  }
+  .section-2 .row__items_title {
+    font-size: 24px;
+  }
+  .section-2 .row__items_description {
     font-size: 12px;
   }
   .section-3 .img {
@@ -3070,22 +3179,54 @@ body {
     justify-content: center;
     gap: 6rem;
   }
-  .section-1 .title {
-    font-size: 45px;
+  .section-1 .section__block_description {
+    width: 100%;
   }
-  .section-1 .title-description {
+  .section-1 .section__block_description .logo-description {
+    font-size: 10px;
+  }
+  .section-1 .section__block_description .title {
+    font-size: 36px;
+  }
+  .section-1 .section__block_description .title-description {
     font-size: 12px;
     margin-bottom: 2rem;
+  }
+  .section-1 .section__block_description .account__lists .btn {
+    padding: 0.7rem;
+    font-size: 8px;
+  }
+  .section-1 .section__block .block__row img {
+    height: 20px;
+  }
+  .section-1 .description-block {
+    left: 4rem;
   }
   .section-1 .dashboard-1 {
     left: 25%;
     width: 250px;
   }
+  .section-1 .dashboard-1 .dashboard-1 {
+    left: 25%;
+    width: 250px;
+  }
+  .section-1 .dashboard-1 .dashboard-1 .dashboard-img {
+    display: block;
+  }
+  .section-1 .dashboard-1 .dashboard-1 .dashboard-title {
+    left: 30px;
+  }
+  .section-1 .dashboard-1 .dashboard-1 .dashboard-title__description {
+    left: 8px;
+  }
+  .section-1 .dashboard-1 .dashboard-1 .dashboard-text {
+    left: 90px;
+  }
   .section-1 .dashboard-text {
     left: 200px;
   }
   .section-1 .dashboard-illustartion {
-    left: 17rem;
+    left: 2rem;
     width: 30px;
   }
   .section-1 .around {
@@ -3115,9 +3256,8 @@ body {
   }
   .section-1 .account__lists {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 2rem;
-    align-items: flex-start;
   }
   .section-1 .account__lists .btn__submit {
     font-size: 10px;
@@ -3125,6 +3265,16 @@ body {
   .section-1 .account__lists .btn__switch {
     margin-left: 0;
     font-size: 10px;
+  }
+  .section-2 .row__items {
+    gap: 1rem;
+    padding: 3rem 3rem;
+  }
+  .section-2 .row__items_title {
+    font-size: 24px;
+  }
+  .section-2 .row__items_description {
+    font-size: 13px;
   }
   .section-3 .section__block {
     display: flex;
@@ -3147,11 +3297,13 @@ body {
   .section-3 .btn {
     display: block;
     width: 150px;
-    height: 50px;
+    height: 48px;
     padding: 0;
   }
   .section-3 .btn__submit {
-    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
   }
   .section-4 .title-3, .section-5 .title-3 {
     text-align: center;
@@ -3251,6 +3403,16 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
+  .section-2 .row__items {
+    gap: 1rem;
+    padding: 3rem 0.5rem;
+  }
+  .section-2 .row__items_title {
+    font-size: 18px;
+  }
+  .section-2 .row__items_description {
+    font-size: 13px;
+  }
   .section-6 {
     max-width: 100%;
   }
@@ -3363,6 +3525,14 @@ body {
   }
   .section-questions .accordion-content {
     font-size: 8px;
+  }
+}
+@media screen and (max-width: 482px) {
+  .section-1 .description-block {
+    left: -2rem;
+  }
+  .section .title-3 {
+    line-height: 100%;
   }
 }
 

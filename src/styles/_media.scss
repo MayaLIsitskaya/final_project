@@ -24,7 +24,21 @@
 
   .section {
     &-1 {
-      width: 90%;
+      .section {
+        &__block {
+          margin: 0 $m-2;
+
+          &_description {
+            .title {
+              font-size: 65px;
+
+              &-description {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
 
       .dashboard {
         &-1 {
@@ -47,11 +61,21 @@
       }
     }
 
+    &-2 {
+      .row {
+        &__items {
+          padding: $p-3 18rem;
+        }
+      }
+    }
+
     &-3 {
       width: 90%;
     }
 
     &-4 {
+      margin: 0 $m-4;
+
       .section {
         &__cards {
           justify-content: space-around;
@@ -60,18 +84,23 @@
           gap: 1rem;
 
           &_item {
-            width: 370px;
+            width: 350px;
 
             .img {
               &-card {
-                width: 370px;
+                width: 350px;
               }
             }
 
+            .container {
+              margin: $m-0-5 $m-1;
+            }
             .card {
               &-info {
+                margin-left: 1.3rem;
+
                 &--icon {
-                  left: 19rem;
+                  left: 18rem;
                 }
               }
             }
@@ -88,6 +117,8 @@
 
 
     &-5 {
+      margin: 0 $m-4;
+
       .section {
         &__dish {
           &_item {
@@ -172,9 +203,6 @@
 @media screen and (max-width: 1010px) {
   .section {
     &-1 {
-      width: 90%;
-
-
       .title {
         font-size: 66px;
 
@@ -207,6 +235,23 @@
         left: 3%;
         width: 149px;
         height: 138px; ;
+      }
+    }
+
+    &-2 {
+      .row {
+        &__items {
+          gap: 1rem;
+          padding: $p-3 17rem;
+
+          &_title {
+            font-size: $font-35;
+          }
+
+          &_description {
+            font-size: $font-14;
+          }
+        }
       }
     }
 
@@ -247,7 +292,7 @@
             width: 13rem;
 
             .like {
-              padding-left: 10rem;
+              padding-left: $p-10;
             }
 
             .dish {
@@ -406,6 +451,41 @@
 
 @media screen and (max-width: 958px) {
   .section {
+    &-1 {
+      .section {
+        &__block {
+          margin: 0 3.5rem;
+
+          &_description {
+            .title {
+              font-size: 50px;
+
+              &-description {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-2 {
+      .row {
+        &__items {
+          gap: 1rem;
+          padding: $p-3 12rem;
+
+          &_title {
+            font-size: $font-32;
+          }
+
+          &_description {
+            font-size: $font-13;
+          }
+        }
+      }
+    }
+
     &-6 {
       max-width: 100%;
 
@@ -537,14 +617,28 @@
 @media screen and (max-width: 864px) {
   .section {
     &-1 {
-      width: 90%;
+      .section {
+        &__block {
+          &_description {
+            .logo {
+              &-description {
+                font-size: 12px;
+              }
+            }
 
-      .title {
-        font-size: 45px;
+            .title {
+              font-size: 44px;
 
-        &-description {
-          font-size: $font-12;
-          margin-bottom: 2rem;
+              &-description {
+                font-size: 11.7px;
+                margin-bottom: 2rem;
+              }
+            }
+
+            .btn {
+              font-size: 12px;
+            }
+          }
         }
       }
 
@@ -596,6 +690,23 @@
       }
     }
 
+
+    &-2 {
+      .row {
+        &__items {
+          padding: $p-3 7rem;
+          gap: 2rem;
+
+          &_title {
+            font-size: $font-28;
+          }
+
+          &_description {
+            font-size: $font-12;
+          }
+        }
+      }
+    }
 
     &-6 {
       max-width: 100%;
@@ -716,25 +827,69 @@
 @media screen and (max-width: 811px) {
   .section {
     &-1 {
-      width: 90%;
       .section {
         &__block {
           display: flex;
-          flex-wrap: wrap;
           flex-direction: column;
           margin-bottom: 17rem;
-          align-items: center;
-          justify-content: center;
           gap: 6rem;
+
+          &_description {
+            width: 100%;
+            text-align: center;
+
+            .logo {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              &-description {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+              }
+            }
+
+            .title {
+              font-size: 42px;
+
+              &-description {
+                font-size: 14px;
+                margin-bottom: 2rem;
+              }
+            }
+
+            .account {
+              &__lists {
+                display: flex;
+                justify-content: center;
+                .btn {
+                  font-size: 12px;
+
+                  &__switch {
+                    margin-left: 0;
+                  }
+                }
+              }
+            }
+          }
+
+          .block {
+            &__row {
+              justify-content: center;
+
+              img {
+                height: 20px;
+              }
+            }
+          }
         }
       }
 
-      .title {
-        font-size: 45px;
-
-        &-description {
-          font-size: $font-12;
-          margin-bottom: 2rem;
+      .description {
+        &-block {
+          left: 7.5rem;
         }
       }
 
@@ -742,15 +897,24 @@
         &-1 {
           left: 25%;
           width: 250px;
-        }
 
-        &-text {
-          left: 200px;
-        }
+          .dashboard {
+            &-img {
+              display: block;
+            }
 
-        &-illustartion {
-          left: 17rem;
-          width: 30px;
+            &-title {
+              left: 30px;
+
+              &__description {
+                left: 8px;
+              }
+            }
+
+            &-text {
+              left: 90px;
+            }
+          }
         }
       }
 
@@ -795,6 +959,21 @@
             &__switch {
               font-size: 12px;
             }
+          }
+        }
+      }
+    }
+
+    &-2 {
+      .row {
+        &__items {
+          padding: $p-2 12rem;
+          &_title {
+            font-size: $font-22;
+          }
+
+          &_description {
+            font-size: $font-12;
           }
         }
       }
@@ -1038,6 +1217,7 @@
   .section {
     &-1 {
       width: 90%;
+
       .section {
         &__block {
           display: flex;
@@ -1047,15 +1227,48 @@
           align-items: center;
           justify-content: center;
           gap: 6rem;
+
+          &_description {
+
+            width: 100%;
+            .logo {
+              &-description {
+                font-size: 10px;
+              }
+            }
+
+            .title {
+              font-size: 36px;
+
+              &-description {
+                font-size: 12px;
+                margin-bottom: 2rem;
+              }
+            }
+
+            .account {
+              &__lists {
+                .btn {
+                  padding: 0.7rem;
+                  font-size: 8px;
+                }
+              }
+            }
+          }
+
+          .block {
+            &__row {
+              img {
+                height: 20px;
+              }
+            }
+          }
         }
       }
 
-      .title {
-        font-size: 45px;
-
-        &-description {
-          font-size: $font-12;
-          margin-bottom: 2rem;
+      .description {
+        &-block {
+          left: 4rem;
         }
       }
 
@@ -1063,6 +1276,31 @@
         &-1 {
           left: 25%;
           width: 250px;
+
+          .dashboard {
+            &-1 {
+              left: 25%;
+              width: 250px;
+
+              .dashboard {
+                &-img {
+                  display: block;
+                }
+
+                &-title {
+                  left: 30px;
+
+                  &__description {
+                    left: 8px;
+                  }
+                }
+
+                &-text {
+                  left: 90px;
+                }
+              }
+            }
+          }
         }
 
         &-text {
@@ -1070,7 +1308,7 @@
         }
 
         &-illustartion {
-          left: 17rem;
+          left: 2rem;
           width: 30px;
         }
       }
@@ -1109,9 +1347,9 @@
       .account {
         &__lists {
           display: flex;
-          flex-direction: column;
+          justify-content: center;
           gap: 2rem;
-          align-items: flex-start;
+
 
           .btn {
             &__submit {
@@ -1122,6 +1360,24 @@
               margin-left: 0;
               font-size: 10px;
             }
+          }
+        }
+      }
+    }
+
+
+    &-2 {
+      .row {
+        &__items {
+          gap: 1rem;
+          padding: $p-3 $p-3;
+
+          &_title {
+            font-size: $font-22;
+          }
+
+          &_description {
+            font-size: $font-13;
           }
         }
       }
@@ -1159,10 +1415,13 @@
       .btn {
         display: block;
         width: 150px;
-        height: 50px;
+        height: 48px;
         padding: 0;
+
         &__submit {
-          font-size: $font-12;
+          display: flex;
+          justify-content: center;
+          font-size: $font-14;
         }
       }
 
@@ -1318,6 +1577,22 @@
 
 @media screen and (max-width: 400px) {
   .section {
+    &-2 {
+      .row {
+        &__items {
+          gap: 1rem;
+          padding: $p-3 $p-0-5;
+
+          &_title {
+            font-size: $font-18;
+          }
+
+          &_description {
+            font-size: $font-13;
+          }
+        }
+      }
+    }
 
     &-6 {
       max-width: 100%;
@@ -1481,6 +1756,22 @@
           font-size: $font-8;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 482px){
+  .section {
+    &-1 {
+      .description {
+        &-block {
+          left: -2rem;
+        }
+      }
+    }
+
+    .title-3 {
+      line-height: 100%;
     }
   }
 }

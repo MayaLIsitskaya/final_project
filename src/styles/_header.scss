@@ -104,7 +104,7 @@
 
     &_close {
       margin-top: $m-2;
-      font-size: $font-32;
+      font-size: $font-28;
       font-weight: $font-w-500;
 
       cursor: pointer;
@@ -118,16 +118,18 @@
     }
 
     .nav {
-      margin-top: $m-2 ;
+      margin-top: $m-5 ;
 
       .navbar {
         &__lists {
           display: flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
         &__link {
-          font-size: $font-48;
+          font-size: $font-28;
         }
       }
     }
@@ -135,11 +137,16 @@
     .account {
       display: block;
       margin-top: $m-5;
+      padding-left: 2.5rem;
 
       &__lists {
         display: flex;
         flex-direction: column;
         gap: 3rem;
+
+        .btn {
+          padding: $p-1;
+        }
       }
     }
   }
