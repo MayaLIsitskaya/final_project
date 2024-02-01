@@ -569,7 +569,6 @@ body {
 .accordion-container.active .accordion-content {
   height: 70px;
 }
-
 .accordion-container.active .accordion-label::before {
   content: "-";
 }
